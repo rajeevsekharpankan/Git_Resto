@@ -16,7 +16,7 @@ namespace ZigZag.Admin
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RestoLogin());
+            Application.Run(new Form1());
         }
     }
 }

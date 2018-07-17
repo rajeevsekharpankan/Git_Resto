@@ -63,7 +63,7 @@ namespace ZigZag.Admin
                 //}
                 SellItemCtrl billitem = pnlbill.Controls.Find(orderitem.product.controlname, false).FirstOrDefault() as SellItemCtrl;
                 billitem.txtqty.Value += qty;
-                billitem.lblqty.Text += qty;
+                billitem.lblqty.Text = (int.Parse(billitem.lblqty.Text) + qty).ToString();
                 orderitem.Tag = orderitem.product;
             }
             else

@@ -35,10 +35,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.chkisstockable = new Bunifu.Framework.UI.BunifuCheckbox();
             this.label5 = new System.Windows.Forms.Label();
+            this.picproduct = new System.Windows.Forms.PictureBox();
+            this.btnbrowse = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnsave = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtdesc = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtprice = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtname = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.ddlcategories = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,20 +49,19 @@
             this.pnlproducts = new System.Windows.Forms.FlowLayoutPanel();
             this.erricon = new System.Windows.Forms.ErrorProvider(this.components);
             this.ofd = new System.Windows.Forms.OpenFileDialog();
-            this.picproduct = new System.Windows.Forms.PictureBox();
-            this.btnbrowse = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnsave = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.ddlcategories = new MetroFramework.Controls.MetroComboBox();
             this.pnlmain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picproduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.erricon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picproduct)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlmain
             // 
+            this.pnlmain.Controls.Add(this.ddlcategories);
             this.pnlmain.Controls.Add(this.chkissellable);
             this.pnlmain.Controls.Add(this.label6);
             this.pnlmain.Controls.Add(this.chkisstockable);
@@ -71,7 +72,6 @@
             this.pnlmain.Controls.Add(this.txtdesc);
             this.pnlmain.Controls.Add(this.txtprice);
             this.pnlmain.Controls.Add(this.txtname);
-            this.pnlmain.Controls.Add(this.ddlcategories);
             this.pnlmain.Controls.Add(this.label3);
             this.pnlmain.Controls.Add(this.label2);
             this.pnlmain.Controls.Add(this.label1);
@@ -84,7 +84,7 @@
             // 
             // chkissellable
             // 
-            this.chkissellable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chkissellable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
             this.chkissellable.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
             this.chkissellable.Checked = false;
             this.chkissellable.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
@@ -107,7 +107,7 @@
             // 
             // chkisstockable
             // 
-            this.chkisstockable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.chkisstockable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
             this.chkisstockable.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
             this.chkisstockable.Checked = false;
             this.chkisstockable.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
@@ -127,6 +127,70 @@
             this.label5.Size = new System.Drawing.Size(83, 15);
             this.label5.TabIndex = 18;
             this.label5.Text = "Is Stockable";
+            // 
+            // picproduct
+            // 
+            this.picproduct.BackgroundImage = global::ZigZag.Admin.Properties.Resources.logo;
+            this.picproduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picproduct.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picproduct.Location = new System.Drawing.Point(218, 3);
+            this.picproduct.Name = "picproduct";
+            this.picproduct.Size = new System.Drawing.Size(185, 209);
+            this.picproduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picproduct.TabIndex = 17;
+            this.picproduct.TabStop = false;
+            // 
+            // btnbrowse
+            // 
+            this.btnbrowse.ActiveBorderThickness = 1;
+            this.btnbrowse.ActiveCornerRadius = 20;
+            this.btnbrowse.ActiveFillColor = System.Drawing.Color.Black;
+            this.btnbrowse.ActiveForecolor = System.Drawing.Color.White;
+            this.btnbrowse.ActiveLineColor = System.Drawing.Color.White;
+            this.btnbrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnbrowse.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnbrowse.BackgroundImage")));
+            this.btnbrowse.ButtonText = "Browse";
+            this.btnbrowse.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnbrowse.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbrowse.ForeColor = System.Drawing.Color.White;
+            this.btnbrowse.IdleBorderThickness = 1;
+            this.btnbrowse.IdleCornerRadius = 20;
+            this.btnbrowse.IdleFillColor = System.Drawing.Color.White;
+            this.btnbrowse.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
+            this.btnbrowse.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
+            this.btnbrowse.Location = new System.Drawing.Point(135, 4);
+            this.btnbrowse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnbrowse.Name = "btnbrowse";
+            this.btnbrowse.Size = new System.Drawing.Size(76, 36);
+            this.btnbrowse.TabIndex = 16;
+            this.btnbrowse.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnbrowse.Click += new System.EventHandler(this.btnbrowse_Click);
+            // 
+            // btnsave
+            // 
+            this.btnsave.ActiveBorderThickness = 1;
+            this.btnsave.ActiveCornerRadius = 20;
+            this.btnsave.ActiveFillColor = System.Drawing.Color.Black;
+            this.btnsave.ActiveForecolor = System.Drawing.Color.White;
+            this.btnsave.ActiveLineColor = System.Drawing.Color.White;
+            this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnsave.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnsave.BackgroundImage")));
+            this.btnsave.ButtonText = "Submit";
+            this.btnsave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsave.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsave.ForeColor = System.Drawing.Color.White;
+            this.btnsave.IdleBorderThickness = 1;
+            this.btnsave.IdleCornerRadius = 20;
+            this.btnsave.IdleFillColor = System.Drawing.Color.White;
+            this.btnsave.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
+            this.btnsave.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
+            this.btnsave.Location = new System.Drawing.Point(328, 373);
+            this.btnsave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(76, 36);
+            this.btnsave.TabIndex = 16;
+            this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // txtdesc
             // 
@@ -184,18 +248,6 @@
             this.txtname.Size = new System.Drawing.Size(291, 28);
             this.txtname.TabIndex = 15;
             this.txtname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // ddlcategories
-            // 
-            this.ddlcategories.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.ddlcategories.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ddlcategories.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ddlcategories.FormattingEnabled = true;
-            this.ddlcategories.Location = new System.Drawing.Point(112, 218);
-            this.ddlcategories.Name = "ddlcategories";
-            this.ddlcategories.Size = new System.Drawing.Size(292, 24);
-            this.ddlcategories.TabIndex = 14;
-            this.ddlcategories.SelectedIndexChanged += new System.EventHandler(this.ddlcategories_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -273,69 +325,15 @@
             // 
             this.erricon.ContainerControl = this;
             // 
-            // picproduct
+            // ddlcategories
             // 
-            this.picproduct.BackgroundImage = global::ZigZag.Admin.Properties.Resources.logo;
-            this.picproduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picproduct.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picproduct.Location = new System.Drawing.Point(218, 3);
-            this.picproduct.Name = "picproduct";
-            this.picproduct.Size = new System.Drawing.Size(185, 209);
-            this.picproduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picproduct.TabIndex = 17;
-            this.picproduct.TabStop = false;
-            // 
-            // btnbrowse
-            // 
-            this.btnbrowse.ActiveBorderThickness = 1;
-            this.btnbrowse.ActiveCornerRadius = 20;
-            this.btnbrowse.ActiveFillColor = System.Drawing.Color.Black;
-            this.btnbrowse.ActiveForecolor = System.Drawing.Color.White;
-            this.btnbrowse.ActiveLineColor = System.Drawing.Color.White;
-            this.btnbrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnbrowse.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnbrowse.BackgroundImage")));
-            this.btnbrowse.ButtonText = "Browse";
-            this.btnbrowse.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnbrowse.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbrowse.ForeColor = System.Drawing.Color.White;
-            this.btnbrowse.IdleBorderThickness = 1;
-            this.btnbrowse.IdleCornerRadius = 20;
-            this.btnbrowse.IdleFillColor = System.Drawing.Color.White;
-            this.btnbrowse.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.btnbrowse.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.btnbrowse.Location = new System.Drawing.Point(135, 4);
-            this.btnbrowse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnbrowse.Name = "btnbrowse";
-            this.btnbrowse.Size = new System.Drawing.Size(76, 36);
-            this.btnbrowse.TabIndex = 16;
-            this.btnbrowse.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnbrowse.Click += new System.EventHandler(this.btnbrowse_Click);
-            // 
-            // btnsave
-            // 
-            this.btnsave.ActiveBorderThickness = 1;
-            this.btnsave.ActiveCornerRadius = 20;
-            this.btnsave.ActiveFillColor = System.Drawing.Color.Black;
-            this.btnsave.ActiveForecolor = System.Drawing.Color.White;
-            this.btnsave.ActiveLineColor = System.Drawing.Color.White;
-            this.btnsave.BackColor = System.Drawing.SystemColors.Control;
-            this.btnsave.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnsave.BackgroundImage")));
-            this.btnsave.ButtonText = "Submit";
-            this.btnsave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnsave.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsave.ForeColor = System.Drawing.Color.White;
-            this.btnsave.IdleBorderThickness = 1;
-            this.btnsave.IdleCornerRadius = 20;
-            this.btnsave.IdleFillColor = System.Drawing.Color.White;
-            this.btnsave.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.btnsave.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.btnsave.Location = new System.Drawing.Point(328, 373);
-            this.btnsave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(76, 36);
-            this.btnsave.TabIndex = 16;
-            this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
+            this.ddlcategories.FormattingEnabled = true;
+            this.ddlcategories.ItemHeight = 23;
+            this.ddlcategories.Location = new System.Drawing.Point(112, 218);
+            this.ddlcategories.Name = "ddlcategories";
+            this.ddlcategories.Size = new System.Drawing.Size(291, 29);
+            this.ddlcategories.TabIndex = 20;
+            this.ddlcategories.SelectedIndexChanged += new System.EventHandler(this.ddlcategories_SelectedIndexChanged);
             // 
             // AddProduct
             // 
@@ -349,12 +347,12 @@
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.AddProduct_Paint);
             this.pnlmain.ResumeLayout(false);
             this.pnlmain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picproduct)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.erricon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picproduct)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -362,7 +360,6 @@
         #endregion
 
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.ComboBox ddlcategories;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtname;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtprice;
@@ -381,5 +378,6 @@
         private System.Windows.Forms.Label label6;
         public Bunifu.Framework.UI.BunifuCheckbox chkissellable;
         public Bunifu.Framework.UI.BunifuCheckbox chkisstockable;
+        private MetroFramework.Controls.MetroComboBox ddlcategories;
     }
 }

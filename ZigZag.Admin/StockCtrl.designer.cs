@@ -28,29 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ddlcategories = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.ddlitems = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlproducts = new System.Windows.Forms.FlowLayoutPanel();
+            this.ddlcategories = new MetroFramework.Controls.MetroComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // ddlcategories
-            // 
-            this.ddlcategories.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.ddlcategories.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ddlcategories.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ddlcategories.FormattingEnabled = true;
-            this.ddlcategories.Location = new System.Drawing.Point(34, 50);
-            this.ddlcategories.Name = "ddlcategories";
-            this.ddlcategories.Size = new System.Drawing.Size(301, 28);
-            this.ddlcategories.TabIndex = 15;
-            this.ddlcategories.SelectedIndexChanged += new System.EventHandler(this.ddlcategories_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -72,9 +60,9 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.ddlcategories);
             this.splitContainer1.Panel1.Controls.Add(this.ddlitems);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
-            this.splitContainer1.Panel1.Controls.Add(this.ddlcategories);
             this.splitContainer1.Panel1.Controls.Add(this.label4);
             // 
             // splitContainer1.Panel2
@@ -90,7 +78,7 @@
             this.ddlitems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ddlitems.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ddlitems.FormattingEnabled = true;
-            this.ddlitems.Location = new System.Drawing.Point(349, 50);
+            this.ddlitems.Location = new System.Drawing.Point(500, 51);
             this.ddlitems.Name = "ddlitems";
             this.ddlitems.Size = new System.Drawing.Size(301, 28);
             this.ddlitems.TabIndex = 15;
@@ -101,7 +89,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(345, 20);
+            this.label1.Location = new System.Drawing.Point(496, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 20);
             this.label1.TabIndex = 14;
@@ -116,6 +104,16 @@
             this.pnlproducts.Name = "pnlproducts";
             this.pnlproducts.Size = new System.Drawing.Size(837, 454);
             this.pnlproducts.TabIndex = 0;
+            // 
+            // ddlcategories
+            // 
+            this.ddlcategories.FormattingEnabled = true;
+            this.ddlcategories.ItemHeight = 23;
+            this.ddlcategories.Location = new System.Drawing.Point(34, 50);
+            this.ddlcategories.Name = "ddlcategories";
+            this.ddlcategories.Size = new System.Drawing.Size(460, 29);
+            this.ddlcategories.TabIndex = 21;
+            this.ddlcategories.SelectedIndexChanged += new System.EventHandler(this.ddlcategories_SelectedIndexChanged);
             // 
             // StockCtrl
             // 
@@ -134,12 +132,11 @@
         }
 
         #endregion
-
-        public System.Windows.Forms.ComboBox ddlcategories;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.SplitContainer splitContainer1;
         public System.Windows.Forms.ComboBox ddlitems;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel pnlproducts;
+        private MetroFramework.Controls.MetroComboBox ddlcategories;
     }
 }

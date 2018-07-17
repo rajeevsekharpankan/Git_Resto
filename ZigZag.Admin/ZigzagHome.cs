@@ -105,6 +105,7 @@ namespace ZigZag.Admin
             try
             {
                 billmasterModel bill = (billmasterModel)notimessage.Tag;
+                this.parentform.orderCtrl1.parentform = this.parentform;
                 this.parentform.orderCtrl1.FillDetails(bill);
                 this.parentform.orderCtrl1.BringToFront();
             }

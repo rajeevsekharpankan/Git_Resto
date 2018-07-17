@@ -18,3 +18,13 @@ D:\Personal Projects\naveen\Resto_07_16_2018\NewResto\Resto.Data\obj\Debug\Resto
 D:\Personal Projects\naveen\Resto_07_16_2018\NewResto\Resto.Data\obj\Debug\Resto.Data.csproj.CoreCompileInputs.cache
 D:\Personal Projects\naveen\Resto_07_16_2018\NewResto\Resto.Data\obj\Debug\Resto.Data.dll
 D:\Personal Projects\naveen\Resto_07_16_2018\NewResto\Resto.Data\obj\Debug\Resto.Data.pdb
+D:\Personal Projects\naveen\Git_Resto\Resto.Data\bin\Debug\RestoDB.accdb
+D:\Personal Projects\naveen\Git_Resto\Resto.Data\bin\Debug\Resto.Data.dll
+D:\Personal Projects\naveen\Git_Resto\Resto.Data\bin\Debug\Resto.Data.pdb
+D:\Personal Projects\naveen\Git_Resto\Resto.Data\bin\Debug\Resto.Models.dll
+D:\Personal Projects\naveen\Git_Resto\Resto.Data\bin\Debug\Resto.Models.pdb
+D:\Personal Projects\naveen\Git_Resto\Resto.Data\obj\Debug\Resto.Data.csproj.ResolveComReference.cache
+D:\Personal Projects\naveen\Git_Resto\Resto.Data\obj\Debug\Resto.Data.csproj.CoreCompileInputs.cache
+D:\Personal Projects\naveen\Git_Resto\Resto.Data\obj\Debug\Resto.Data.dll
+D:\Personal Projects\naveen\Git_Resto\Resto.Data\obj\Debug\Resto.Data.pdb
+D:\Personal Projects\naveen\Git_Resto\Resto.Data\obj\Debug\Resto.Data.csprojResolveAssemblyReference.cache

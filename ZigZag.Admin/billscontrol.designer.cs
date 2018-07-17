@@ -36,12 +36,12 @@
             this.rbncash = new System.Windows.Forms.RadioButton();
             this.rbndirect = new System.Windows.Forms.RadioButton();
             this.rbnPc = new System.Windows.Forms.RadioButton();
-            this.ddlitems = new System.Windows.Forms.ComboBox();
             this.btnsent = new Bunifu.Framework.UI.BunifuThinButton2();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
             this.lblamount = new System.Windows.Forms.Label();
             this.pnlbill = new System.Windows.Forms.FlowLayoutPanel();
+            this.ddlitems = new MetroFramework.Controls.MetroComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -62,12 +62,12 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.ddlitems);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.dtpbill);
             this.panel2.Controls.Add(this.rbncash);
             this.panel2.Controls.Add(this.rbndirect);
             this.panel2.Controls.Add(this.rbnPc);
-            this.panel2.Controls.Add(this.ddlitems);
             this.panel2.Controls.Add(this.btnsent);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -134,18 +134,6 @@
             this.rbnPc.Text = "Pcs";
             this.rbnPc.UseVisualStyleBackColor = true;
             this.rbnPc.CheckedChanged += new System.EventHandler(this.rbnPc_CheckedChanged);
-            // 
-            // ddlitems
-            // 
-            this.ddlitems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(74)))));
-            this.ddlitems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ddlitems.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ddlitems.FormattingEnabled = true;
-            this.ddlitems.Location = new System.Drawing.Point(17, 42);
-            this.ddlitems.Name = "ddlitems";
-            this.ddlitems.Size = new System.Drawing.Size(301, 28);
-            this.ddlitems.TabIndex = 20;
-            this.ddlitems.SelectedIndexChanged += new System.EventHandler(this.ddlitems_SelectedIndexChanged);
             // 
             // btnsent
             // 
@@ -228,6 +216,17 @@
             this.pnlbill.TabIndex = 1;
             this.pnlbill.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.flowLayoutPanel1_ControlAdded);
             // 
+            // ddlitems
+            // 
+            this.ddlitems.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ddlitems.FormattingEnabled = true;
+            this.ddlitems.ItemHeight = 23;
+            this.ddlitems.Location = new System.Drawing.Point(17, 40);
+            this.ddlitems.Name = "ddlitems";
+            this.ddlitems.Size = new System.Drawing.Size(291, 29);
+            this.ddlitems.TabIndex = 408;
+            this.ddlitems.SelectedIndexChanged += new System.EventHandler(this.ddlitems_SelectedIndexChanged);
+            // 
             // billscontrol
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,9 +257,9 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnsent;
         private System.Windows.Forms.RadioButton rbndirect;
         private System.Windows.Forms.RadioButton rbnPc;
-        public System.Windows.Forms.ComboBox ddlitems;
         internal System.Windows.Forms.DateTimePicker dtpbill;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RadioButton rbncash;
+        private MetroFramework.Controls.MetroComboBox ddlitems;
     }
 }

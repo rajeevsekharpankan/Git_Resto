@@ -42,24 +42,7 @@
             this.button12 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.pnlmenu = new System.Windows.Forms.Panel();
-            this.btnhome = new System.Windows.Forms.Button();
-            this.pnllogo = new System.Windows.Forms.Panel();
-            this.SidePanel = new System.Windows.Forms.Panel();
-            this.btnlandingpage = new System.Windows.Forms.Button();
-            this.btnusers = new System.Windows.Forms.Button();
-            this.btnsuppliers = new System.Windows.Forms.Button();
-            this.btncustomer = new System.Windows.Forms.Button();
-            this.btnpurchase = new System.Windows.Forms.Button();
-            this.btnpclist = new System.Windows.Forms.Button();
-            this.btndirectbilling = new System.Windows.Forms.Button();
-            this.btnbill = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnItemmaster = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.stockCtrl1 = new ZigZag.Admin.StockCtrl();
             this.billscontrol1 = new ZigZag.Admin.billscontrol();
             this.pcBillingCtrl1 = new ZigZag.Admin.PcBillingCtrl();
             this.zigzagHome1 = new ZigZag.Admin.ZigzagHome();
@@ -70,8 +53,27 @@
             this.ItemListCtrl1 = new ZigZag.Admin.AddProduct();
             this.orderCtrl1 = new ZigZag.Admin.OrderCtrl();
             this.userCreationCtrl1 = new ZigZag.Admin.UserCreationCtrl();
+            this.button14 = new System.Windows.Forms.Button();
+            this.pnlmenu = new System.Windows.Forms.Panel();
+            this.btnhome = new System.Windows.Forms.Button();
+            this.pnllogo = new System.Windows.Forms.Panel();
+            this.SidePanel = new System.Windows.Forms.Panel();
+            this.btnlandingpage = new System.Windows.Forms.Button();
+            this.btnusers = new System.Windows.Forms.Button();
+            this.btnsuppliers = new System.Windows.Forms.Button();
+            this.btncustomer = new System.Windows.Forms.Button();
+            this.btnpurchase = new System.Windows.Forms.Button();
+            this.btnmanagement = new System.Windows.Forms.Button();
+            this.btnreports = new System.Windows.Forms.Button();
+            this.btnpclist = new System.Windows.Forms.Button();
             this.btnstock = new System.Windows.Forms.Button();
-            this.stockCtrl1 = new ZigZag.Admin.StockCtrl();
+            this.btndirectbilling = new System.Windows.Forms.Button();
+            this.btnbill = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.btnItemmaster = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -161,8 +163,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.ItemListCtrl1);
             this.splitContainer1.Panel2.Controls.Add(this.orderCtrl1);
             this.splitContainer1.Panel2.Controls.Add(this.userCreationCtrl1);
-            this.splitContainer1.Size = new System.Drawing.Size(867, 657);
-            this.splitContainer1.SplitterDistance = 77;
+            this.splitContainer1.Size = new System.Drawing.Size(867, 679);
+            this.splitContainer1.SplitterDistance = 79;
             this.splitContainer1.TabIndex = 7;
             // 
             // pictureBox2
@@ -171,7 +173,7 @@
             this.pictureBox2.Image = global::ZigZag.Admin.Properties.Resources.signboardpdf;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(867, 77);
+            this.pictureBox2.Size = new System.Drawing.Size(867, 79);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -271,6 +273,111 @@
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Visible = false;
             // 
+            // stockCtrl1
+            // 
+            this.stockCtrl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.stockCtrl1.Location = new System.Drawing.Point(0, 0);
+            this.stockCtrl1.Name = "stockCtrl1";
+            this.stockCtrl1.parentform = null;
+            this.stockCtrl1.Size = new System.Drawing.Size(867, 596);
+            this.stockCtrl1.TabIndex = 8;
+            // 
+            // billscontrol1
+            // 
+            this.billscontrol1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.billscontrol1.Location = new System.Drawing.Point(0, 0);
+            this.billscontrol1.Name = "billscontrol1";
+            this.billscontrol1.Size = new System.Drawing.Size(867, 596);
+            this.billscontrol1.TabIndex = 6;
+            this.billscontrol1.Load += new System.EventHandler(this.billscontrol1_Load);
+            // 
+            // pcBillingCtrl1
+            // 
+            this.pcBillingCtrl1.categoryid = 0;
+            this.pcBillingCtrl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcBillingCtrl1.Location = new System.Drawing.Point(0, 0);
+            this.pcBillingCtrl1.Name = "pcBillingCtrl1";
+            this.pcBillingCtrl1.parentform = null;
+            this.pcBillingCtrl1.Size = new System.Drawing.Size(867, 596);
+            this.pcBillingCtrl1.TabIndex = 5;
+            // 
+            // zigzagHome1
+            // 
+            this.zigzagHome1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(82)))), ((int)(((byte)(163)))));
+            this.zigzagHome1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.zigzagHome1.Location = new System.Drawing.Point(0, 0);
+            this.zigzagHome1.Name = "zigzagHome1";
+            this.zigzagHome1.parentform = null;
+            this.zigzagHome1.Size = new System.Drawing.Size(867, 596);
+            this.zigzagHome1.TabIndex = 1;
+            // 
+            // suppliers1
+            // 
+            this.suppliers1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.suppliers1.Location = new System.Drawing.Point(0, 0);
+            this.suppliers1.Name = "suppliers1";
+            this.suppliers1.parentform = null;
+            this.suppliers1.Size = new System.Drawing.Size(867, 596);
+            this.suppliers1.TabIndex = 4;
+            // 
+            // purchaseCtrl1
+            // 
+            this.purchaseCtrl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(82)))), ((int)(((byte)(163)))));
+            this.purchaseCtrl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.purchaseCtrl1.ForeColor = System.Drawing.Color.White;
+            this.purchaseCtrl1.Location = new System.Drawing.Point(0, 0);
+            this.purchaseCtrl1.Name = "purchaseCtrl1";
+            this.purchaseCtrl1.parentform = null;
+            this.purchaseCtrl1.Size = new System.Drawing.Size(867, 596);
+            this.purchaseCtrl1.TabIndex = 3;
+            // 
+            // pcListCtrl1
+            // 
+            this.pcListCtrl1.BackColor = System.Drawing.Color.Transparent;
+            this.pcListCtrl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pcListCtrl1.Location = new System.Drawing.Point(0, 0);
+            this.pcListCtrl1.Name = "pcListCtrl1";
+            this.pcListCtrl1.parentform = null;
+            this.pcListCtrl1.Size = new System.Drawing.Size(867, 596);
+            this.pcListCtrl1.TabIndex = 3;
+            // 
+            // customerCtrl1
+            // 
+            this.customerCtrl1.categoryid = 0;
+            this.customerCtrl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customerCtrl1.Location = new System.Drawing.Point(0, 0);
+            this.customerCtrl1.Name = "customerCtrl1";
+            this.customerCtrl1.parentform = null;
+            this.customerCtrl1.Size = new System.Drawing.Size(867, 596);
+            this.customerCtrl1.TabIndex = 0;
+            // 
+            // ItemListCtrl1
+            // 
+            this.ItemListCtrl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ItemListCtrl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ItemListCtrl1.Location = new System.Drawing.Point(0, 0);
+            this.ItemListCtrl1.Name = "ItemListCtrl1";
+            this.ItemListCtrl1.Size = new System.Drawing.Size(867, 596);
+            this.ItemListCtrl1.TabIndex = 0;
+            // 
+            // orderCtrl1
+            // 
+            this.orderCtrl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.orderCtrl1.Location = new System.Drawing.Point(0, 0);
+            this.orderCtrl1.Name = "orderCtrl1";
+            this.orderCtrl1.parentform = null;
+            this.orderCtrl1.Size = new System.Drawing.Size(867, 596);
+            this.orderCtrl1.TabIndex = 2;
+            // 
+            // userCreationCtrl1
+            // 
+            this.userCreationCtrl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userCreationCtrl1.Location = new System.Drawing.Point(0, 0);
+            this.userCreationCtrl1.Name = "userCreationCtrl1";
+            this.userCreationCtrl1.parentform = null;
+            this.userCreationCtrl1.Size = new System.Drawing.Size(867, 596);
+            this.userCreationCtrl1.TabIndex = 7;
+            // 
             // button14
             // 
             this.button14.FlatAppearance.BorderSize = 0;
@@ -298,6 +405,8 @@
             this.pnlmenu.Controls.Add(this.btnsuppliers);
             this.pnlmenu.Controls.Add(this.btncustomer);
             this.pnlmenu.Controls.Add(this.btnpurchase);
+            this.pnlmenu.Controls.Add(this.btnmanagement);
+            this.pnlmenu.Controls.Add(this.btnreports);
             this.pnlmenu.Controls.Add(this.btnpclist);
             this.pnlmenu.Controls.Add(this.btnstock);
             this.pnlmenu.Controls.Add(this.btndirectbilling);
@@ -310,7 +419,7 @@
             this.pnlmenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlmenu.Location = new System.Drawing.Point(0, 0);
             this.pnlmenu.Name = "pnlmenu";
-            this.pnlmenu.Size = new System.Drawing.Size(209, 657);
+            this.pnlmenu.Size = new System.Drawing.Size(209, 679);
             this.pnlmenu.TabIndex = 0;
             this.pnlmenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -403,7 +512,7 @@
             this.btncustomer.ForeColor = System.Drawing.Color.White;
             this.btncustomer.Image = ((System.Drawing.Image)(resources.GetObject("btncustomer.Image")));
             this.btncustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncustomer.Location = new System.Drawing.Point(12, 506);
+            this.btncustomer.Location = new System.Drawing.Point(11, 615);
             this.btncustomer.Name = "btncustomer";
             this.btncustomer.Size = new System.Drawing.Size(197, 30);
             this.btncustomer.TabIndex = 4;
@@ -430,6 +539,40 @@
             this.btnpurchase.UseVisualStyleBackColor = true;
             this.btnpurchase.Click += new System.EventHandler(this.btnpurchase_Click);
             // 
+            // btnmanagement
+            // 
+            this.btnmanagement.FlatAppearance.BorderSize = 0;
+            this.btnmanagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnmanagement.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnmanagement.ForeColor = System.Drawing.Color.White;
+            this.btnmanagement.Image = global::ZigZag.Admin.Properties.Resources.lap;
+            this.btnmanagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnmanagement.Location = new System.Drawing.Point(6, 534);
+            this.btnmanagement.Name = "btnmanagement";
+            this.btnmanagement.Size = new System.Drawing.Size(197, 30);
+            this.btnmanagement.TabIndex = 4;
+            this.btnmanagement.Text = "       Management";
+            this.btnmanagement.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnmanagement.UseVisualStyleBackColor = true;
+            this.btnmanagement.Click += new System.EventHandler(this.btnmanagement_Click);
+            // 
+            // btnreports
+            // 
+            this.btnreports.FlatAppearance.BorderSize = 0;
+            this.btnreports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnreports.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnreports.ForeColor = System.Drawing.Color.White;
+            this.btnreports.Image = global::ZigZag.Admin.Properties.Resources.lap;
+            this.btnreports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnreports.Location = new System.Drawing.Point(6, 498);
+            this.btnreports.Name = "btnreports";
+            this.btnreports.Size = new System.Drawing.Size(197, 30);
+            this.btnreports.TabIndex = 4;
+            this.btnreports.Text = "       Reports";
+            this.btnreports.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnreports.UseVisualStyleBackColor = true;
+            this.btnreports.Click += new System.EventHandler(this.btnreports_Click);
+            // 
             // btnpclist
             // 
             this.btnpclist.FlatAppearance.BorderSize = 0;
@@ -446,6 +589,23 @@
             this.btnpclist.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnpclist.UseVisualStyleBackColor = true;
             this.btnpclist.Click += new System.EventHandler(this.btnpclist_Click);
+            // 
+            // btnstock
+            // 
+            this.btnstock.FlatAppearance.BorderSize = 0;
+            this.btnstock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnstock.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnstock.ForeColor = System.Drawing.Color.White;
+            this.btnstock.Image = ((System.Drawing.Image)(resources.GetObject("btnstock.Image")));
+            this.btnstock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnstock.Location = new System.Drawing.Point(10, 390);
+            this.btnstock.Name = "btnstock";
+            this.btnstock.Size = new System.Drawing.Size(197, 30);
+            this.btnstock.TabIndex = 4;
+            this.btnstock.Text = "       Stock";
+            this.btnstock.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnstock.UseVisualStyleBackColor = true;
+            this.btnstock.Click += new System.EventHandler(this.btnstock_Click);
             // 
             // btndirectbilling
             // 
@@ -489,7 +649,7 @@
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(3, 596);
+            this.button5.Location = new System.Drawing.Point(2, 604);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(197, 54);
             this.button5.TabIndex = 4;
@@ -506,7 +666,7 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(3, 542);
+            this.button4.Location = new System.Drawing.Point(9, 595);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(197, 54);
             this.button4.TabIndex = 4;
@@ -554,132 +714,11 @@
             this.timer1.Interval = 20;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // billscontrol1
-            // 
-            this.billscontrol1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.billscontrol1.Location = new System.Drawing.Point(0, 0);
-            this.billscontrol1.Name = "billscontrol1";
-            this.billscontrol1.Size = new System.Drawing.Size(867, 576);
-            this.billscontrol1.TabIndex = 6;
-            this.billscontrol1.Load += new System.EventHandler(this.billscontrol1_Load);
-            // 
-            // pcBillingCtrl1
-            // 
-            this.pcBillingCtrl1.categoryid = 0;
-            this.pcBillingCtrl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcBillingCtrl1.Location = new System.Drawing.Point(0, 0);
-            this.pcBillingCtrl1.Name = "pcBillingCtrl1";
-            this.pcBillingCtrl1.parentform = null;
-            this.pcBillingCtrl1.Size = new System.Drawing.Size(867, 576);
-            this.pcBillingCtrl1.TabIndex = 5;
-            // 
-            // zigzagHome1
-            // 
-            this.zigzagHome1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(82)))), ((int)(((byte)(163)))));
-            this.zigzagHome1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.zigzagHome1.Location = new System.Drawing.Point(0, 0);
-            this.zigzagHome1.Name = "zigzagHome1";
-            this.zigzagHome1.parentform = null;
-            this.zigzagHome1.Size = new System.Drawing.Size(867, 576);
-            this.zigzagHome1.TabIndex = 1;
-            // 
-            // suppliers1
-            // 
-            this.suppliers1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.suppliers1.Location = new System.Drawing.Point(0, 0);
-            this.suppliers1.Name = "suppliers1";
-            this.suppliers1.parentform = null;
-            this.suppliers1.Size = new System.Drawing.Size(867, 576);
-            this.suppliers1.TabIndex = 4;
-            // 
-            // purchaseCtrl1
-            // 
-            this.purchaseCtrl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(82)))), ((int)(((byte)(163)))));
-            this.purchaseCtrl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.purchaseCtrl1.ForeColor = System.Drawing.Color.White;
-            this.purchaseCtrl1.Location = new System.Drawing.Point(0, 0);
-            this.purchaseCtrl1.Name = "purchaseCtrl1";
-            this.purchaseCtrl1.parentform = null;
-            this.purchaseCtrl1.Size = new System.Drawing.Size(867, 576);
-            this.purchaseCtrl1.TabIndex = 3;
-            // 
-            // pcListCtrl1
-            // 
-            this.pcListCtrl1.BackColor = System.Drawing.Color.Transparent;
-            this.pcListCtrl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcListCtrl1.Location = new System.Drawing.Point(0, 0);
-            this.pcListCtrl1.Name = "pcListCtrl1";
-            this.pcListCtrl1.parentform = null;
-            this.pcListCtrl1.Size = new System.Drawing.Size(867, 576);
-            this.pcListCtrl1.TabIndex = 3;
-            // 
-            // customerCtrl1
-            // 
-            this.customerCtrl1.categoryid = 0;
-            this.customerCtrl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customerCtrl1.Location = new System.Drawing.Point(0, 0);
-            this.customerCtrl1.Name = "customerCtrl1";
-            this.customerCtrl1.parentform = null;
-            this.customerCtrl1.Size = new System.Drawing.Size(867, 576);
-            this.customerCtrl1.TabIndex = 0;
-            // 
-            // ItemListCtrl1
-            // 
-            this.ItemListCtrl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ItemListCtrl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ItemListCtrl1.Location = new System.Drawing.Point(0, 0);
-            this.ItemListCtrl1.Name = "ItemListCtrl1";
-            this.ItemListCtrl1.Size = new System.Drawing.Size(867, 576);
-            this.ItemListCtrl1.TabIndex = 0;
-            // 
-            // orderCtrl1
-            // 
-            this.orderCtrl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.orderCtrl1.Location = new System.Drawing.Point(0, 0);
-            this.orderCtrl1.Name = "orderCtrl1";
-            this.orderCtrl1.parentform = null;
-            this.orderCtrl1.Size = new System.Drawing.Size(867, 576);
-            this.orderCtrl1.TabIndex = 2;
-            // 
-            // userCreationCtrl1
-            // 
-            this.userCreationCtrl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userCreationCtrl1.Location = new System.Drawing.Point(0, 0);
-            this.userCreationCtrl1.Name = "userCreationCtrl1";
-            this.userCreationCtrl1.parentform = null;
-            this.userCreationCtrl1.Size = new System.Drawing.Size(867, 576);
-            this.userCreationCtrl1.TabIndex = 7;
-            // 
-            // btnstock
-            // 
-            this.btnstock.FlatAppearance.BorderSize = 0;
-            this.btnstock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnstock.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnstock.ForeColor = System.Drawing.Color.White;
-            this.btnstock.Image = ((System.Drawing.Image)(resources.GetObject("btnstock.Image")));
-            this.btnstock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnstock.Location = new System.Drawing.Point(10, 390);
-            this.btnstock.Name = "btnstock";
-            this.btnstock.Size = new System.Drawing.Size(197, 30);
-            this.btnstock.TabIndex = 4;
-            this.btnstock.Text = "       Stock";
-            this.btnstock.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnstock.UseVisualStyleBackColor = true;
-            this.btnstock.Click += new System.EventHandler(this.btnstock_Click);
-            // 
-            // stockCtrl1
-            // 
-            this.stockCtrl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stockCtrl1.Location = new System.Drawing.Point(0, 0);
-            this.stockCtrl1.Name = "stockCtrl1";
-            this.stockCtrl1.Size = new System.Drawing.Size(867, 576);
-            this.stockCtrl1.TabIndex = 8;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1076, 657);
+            this.ClientSize = new System.Drawing.Size(1076, 679);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.pnlmenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -713,9 +752,6 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button btnexit;
-       // public FirstCustomControl firstCustomControl1;
-        //public MySecondCustmControl mySecondCustmControl1;
-        private System.Windows.Forms.SplitContainer splitContainer1;
        // public Resto.UI.billscontrol billscontrol1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -749,6 +785,9 @@
         private UserCreationCtrl userCreationCtrl1;
         private System.Windows.Forms.Button btnstock;
         private StockCtrl stockCtrl1;
+        private System.Windows.Forms.Button btnreports;
+        public System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.Button btnmanagement;
     }
 }
 

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ZigZag.Admin
 {
-    public partial class BillManagement : UserControl
+    public partial class BillManagement : CommonCtrl
     {
         public BillManagement()
         {

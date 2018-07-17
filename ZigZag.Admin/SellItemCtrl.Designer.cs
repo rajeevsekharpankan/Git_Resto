@@ -66,11 +66,11 @@
             // 
             this.lblqty.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblqty.ForeColor = System.Drawing.Color.Black;
-            this.lblqty.Location = new System.Drawing.Point(38, 158);
+            this.lblqty.Location = new System.Drawing.Point(46, 158);
             this.lblqty.Name = "lblqty";
-            this.lblqty.Size = new System.Drawing.Size(60, 25);
+            this.lblqty.Size = new System.Drawing.Size(51, 25);
             this.lblqty.TabIndex = 7;
-            this.lblqty.Text = "qty";
+            this.lblqty.Text = "0";
             this.lblqty.Visible = false;
             // 
             // txtqty
@@ -105,9 +105,9 @@
             this.lblqtycaption.ForeColor = System.Drawing.Color.Black;
             this.lblqtycaption.Location = new System.Drawing.Point(3, 161);
             this.lblqtycaption.Name = "lblqtycaption";
-            this.lblqtycaption.Size = new System.Drawing.Size(35, 19);
+            this.lblqtycaption.Size = new System.Drawing.Size(43, 19);
             this.lblqtycaption.TabIndex = 3;
-            this.lblqtycaption.Text = "Qty";
+            this.lblqtycaption.Text = "Qty :";
             // 
             // btnaddtocart
             // 

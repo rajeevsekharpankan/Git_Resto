@@ -242,6 +242,9 @@ namespace ZigZag.Admin
             btndirectbilling.BackColor = Color.FromArgb(41, 39, 40);
             btnusers.BackColor = Color.FromArgb(41, 39, 40);
             btnstock.BackColor = Color.FromArgb(41, 39, 40);
+            btnreports.BackColor = Color.FromArgb(41, 39, 40);
+            btnmanagement.BackColor = Color.FromArgb(41, 39, 40);
+
         }
 
         private void btndirectbilling_Click(object sender, EventArgs e)
@@ -293,6 +296,50 @@ namespace ZigZag.Admin
                 stockCtrl1.BringToFront();
                 stockCtrl1.FillCategories();
                 stockCtrl1.parentform = this;
+            }
+            catch (Exception ex)
+            {
+
+                Utilities.ShowError(ex.Message.ToString() + Environment.NewLine + ex.StackTrace.ToString());
+            }
+        }
+
+        private void btnreports_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ClearButtonColor();
+                btnreports.BackColor = Color.FromArgb(57, 82, 163);
+                SidePanel.Height = btnreports.Height;
+                SidePanel.Top = btnreports.Top;
+                if (RestoReportCtrl1 == null) RestoReportCtrl1 = new RestoReportCtrl();
+                splitContainer1.Panel2.Controls.Add(RestoReportCtrl1);
+                RestoReportCtrl1.BringToFront();
+                RestoReportCtrl1.Dock = DockStyle.Fill;
+                RestoReportCtrl1.parentform = this;
+            }
+            catch (Exception ex)
+            {
+
+                Utilities.ShowError(ex.Message.ToString() + Environment.NewLine + ex.StackTrace.ToString());
+            }
+        }
+        public RestoReportCtrl RestoReportCtrl1;
+        public RestoManagement RestoManagement1;
+
+        private void btnmanagement_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ClearButtonColor();
+                btnmanagement.BackColor = Color.FromArgb(57, 82, 163);
+                SidePanel.Height = btnreports.Height;
+                SidePanel.Top = btnreports.Top;
+                if (RestoManagement1 == null) RestoManagement1 = new RestoManagement();
+                splitContainer1.Panel2.Controls.Add(RestoManagement1);
+                RestoManagement1.BringToFront();
+                RestoManagement1.Dock = DockStyle.Fill;
+                RestoManagement1.parentform = this;
             }
             catch (Exception ex)
             {

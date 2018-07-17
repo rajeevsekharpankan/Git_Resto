@@ -37,6 +37,9 @@
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>..\..\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>C:\Users\rajeev.pankan@speridian.dc\Documents\Visual Studio 2017\Projects\WindowsFormsApp1\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -68,6 +71,12 @@
     </Compile>
     <Compile Include="billCtrl.designer.cs">
       <DependentUpon>billCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BillManagement.Designer.cs">
+      <DependentUpon>BillManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="billscontrol.cs">
       <SubType>UserControl</SubType>
@@ -176,11 +185,29 @@
     <Compile Include="PurchaseItemCtrl.designer.cs">
       <DependentUpon>PurchaseItemCtrl.cs</DependentUpon>
     </Compile>
+    <Compile Include="PurchaseReportCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PurchaseReportCtrl.Designer.cs">
+      <DependentUpon>PurchaseReportCtrl.cs</DependentUpon>
+    </Compile>
     <Compile Include="RestoLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RestoLogin.Designer.cs">
       <DependentUpon>RestoLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RestoManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RestoManagement.Designer.cs">
+      <DependentUpon>RestoManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RestoReportCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RestoReportCtrl.Designer.cs">
+      <DependentUpon>RestoReportCtrl.cs</DependentUpon>
     </Compile>
     <Compile Include="SellItemCtrl.cs">
       <SubType>UserControl</SubType>
@@ -232,6 +259,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="billCtrl.resx">
       <DependentUpon>billCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillManagement.resx">
+      <DependentUpon>BillManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="billscontrol.resx">
       <DependentUpon>billscontrol.cs</DependentUpon>
@@ -297,8 +327,17 @@
     <EmbeddedResource Include="PurchaseItemCtrl.resx">
       <DependentUpon>PurchaseItemCtrl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseReportCtrl.resx">
+      <DependentUpon>PurchaseReportCtrl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RestoLogin.resx">
       <DependentUpon>RestoLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RestoManagement.resx">
+      <DependentUpon>RestoManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RestoReportCtrl.resx">
+      <DependentUpon>RestoReportCtrl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SellItemCtrl.resx">
       <DependentUpon>SellItemCtrl.cs</DependentUpon>
@@ -337,6 +376,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\reporticon.jpg" />
     <Content Include="zigzagicon.ico" />
     <None Include="Resources\lap.png" />
     <None Include="Resources\pc.png" />
