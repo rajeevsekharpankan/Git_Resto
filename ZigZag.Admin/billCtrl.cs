@@ -43,7 +43,7 @@ namespace ZigZag.Admin
         {
 
         }
-
+        OrderForm orderform = null;
         private void btnview_Click(object sender, EventArgs e)
         {
             try
@@ -56,8 +56,8 @@ namespace ZigZag.Admin
                 }
                 else
                 {
-                    //OrderForm order = new OrderForm();
-                    //order.ShowDialog();
+                    if (orderform == null) orderform = new OrderForm();
+                    orderform.ShowDialog();
                 }
 
             }

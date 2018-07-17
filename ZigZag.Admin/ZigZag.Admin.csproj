@@ -72,6 +72,12 @@
     <Compile Include="billCtrl.designer.cs">
       <DependentUpon>billCtrl.cs</DependentUpon>
     </Compile>
+    <Compile Include="BilledOrdersCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BilledOrdersCtrl.Designer.cs">
+      <DependentUpon>BilledOrdersCtrl.cs</DependentUpon>
+    </Compile>
     <Compile Include="BillManagement.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -122,6 +128,12 @@
     </Compile>
     <Compile Include="LatestOrders.designer.cs">
       <DependentUpon>LatestOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderForm.Designer.cs">
+      <DependentUpon>OrderForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PcBillingCtrl.cs">
       <SubType>UserControl</SubType>
@@ -260,6 +272,9 @@
     <EmbeddedResource Include="billCtrl.resx">
       <DependentUpon>billCtrl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BilledOrdersCtrl.resx">
+      <DependentUpon>BilledOrdersCtrl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BillManagement.resx">
       <DependentUpon>BillManagement.cs</DependentUpon>
     </EmbeddedResource>
@@ -286,6 +301,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LatestOrders.resx">
       <DependentUpon>LatestOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderForm.resx">
+      <DependentUpon>OrderForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PcBillingCtrl.resx">
       <DependentUpon>PcBillingCtrl.cs</DependentUpon>
