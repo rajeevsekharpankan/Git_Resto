@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Resto.Models;
 
 namespace ZigZag.Admin
 {
@@ -15,6 +16,19 @@ namespace ZigZag.Admin
         public BillManagement()
         {
             InitializeComponent();
+        }
+
+        private void btnfind_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+
+                Utilities.ShowError(ex.Message.ToString() + Environment.NewLine + ex.StackTrace.ToString());
+            }
         }
     }
 }

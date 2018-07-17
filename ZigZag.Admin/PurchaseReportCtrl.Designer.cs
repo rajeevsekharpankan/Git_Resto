@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuDatepicker2 = new Bunifu.Framework.UI.BunifuDatepicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.bunifuDatepicker1 = new Bunifu.Framework.UI.BunifuDatepicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.ddlpcs = new MetroFramework.Controls.MetroComboBox();
+            this.dtpto = new System.Windows.Forms.DateTimePicker();
+            this.dtpfrom = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.bunifuDatepicker2);
+            this.panel1.Controls.Add(this.dtpto);
+            this.panel1.Controls.Add(this.dtpfrom);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.bunifuDatepicker1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.ddlpcs);
@@ -51,18 +51,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(984, 102);
             this.panel1.TabIndex = 1;
-            // 
-            // bunifuDatepicker2
-            // 
-            this.bunifuDatepicker2.BorderRadius = 0;
-            this.bunifuDatepicker2.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.bunifuDatepicker2.FormatCustom = null;
-            this.bunifuDatepicker2.Location = new System.Drawing.Point(547, 30);
-            this.bunifuDatepicker2.Name = "bunifuDatepicker2";
-            this.bunifuDatepicker2.Size = new System.Drawing.Size(201, 36);
-            this.bunifuDatepicker2.TabIndex = 411;
-            this.bunifuDatepicker2.Value = new System.DateTime(2018, 7, 17, 13, 48, 58, 122);
             // 
             // label3
             // 
@@ -74,23 +62,11 @@
             this.label3.TabIndex = 410;
             this.label3.Text = "To";
             // 
-            // bunifuDatepicker1
-            // 
-            this.bunifuDatepicker1.BorderRadius = 0;
-            this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.bunifuDatepicker1.FormatCustom = null;
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(328, 30);
-            this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(201, 36);
-            this.bunifuDatepicker1.TabIndex = 411;
-            this.bunifuDatepicker1.Value = new System.DateTime(2018, 7, 17, 13, 48, 58, 122);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(324, 7);
+            this.label2.Location = new System.Drawing.Point(394, 7);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 20);
             this.label2.TabIndex = 410;
@@ -116,6 +92,24 @@
             this.ddlpcs.Size = new System.Drawing.Size(310, 29);
             this.ddlpcs.TabIndex = 409;
             // 
+            // dtpto
+            // 
+            this.dtpto.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpto.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpto.Location = new System.Drawing.Point(500, 38);
+            this.dtpto.Name = "dtpto";
+            this.dtpto.Size = new System.Drawing.Size(128, 26);
+            this.dtpto.TabIndex = 412;
+            // 
+            // dtpfrom
+            // 
+            this.dtpfrom.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpfrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpfrom.Location = new System.Drawing.Point(357, 38);
+            this.dtpfrom.Name = "dtpfrom";
+            this.dtpfrom.Size = new System.Drawing.Size(128, 26);
+            this.dtpfrom.TabIndex = 413;
+            // 
             // PurchaseReportCtrl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -132,11 +126,11 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker2;
         private System.Windows.Forms.Label label3;
-        private Bunifu.Framework.UI.BunifuDatepicker bunifuDatepicker1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private MetroFramework.Controls.MetroComboBox ddlpcs;
+        internal System.Windows.Forms.DateTimePicker dtpto;
+        internal System.Windows.Forms.DateTimePicker dtpfrom;
     }
 }
