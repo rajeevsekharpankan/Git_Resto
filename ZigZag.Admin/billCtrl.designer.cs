@@ -33,26 +33,31 @@
             this.lblamount = new System.Windows.Forms.Label();
             this.btnview = new System.Windows.Forms.Button();
             this.lblname = new System.Windows.Forms.Label();
+            this.lbldate = new System.Windows.Forms.Label();
+            this.lbldatecaption = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gold;
+            this.panel1.Controls.Add(this.lbldatecaption);
+            this.panel1.Controls.Add(this.lbldate);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblamount);
             this.panel1.Controls.Add(this.btnview);
             this.panel1.Controls.Add(this.lblname);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Font = new System.Drawing.Font("Lucida Bright", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(150, 76);
+            this.panel1.Size = new System.Drawing.Size(150, 86);
             this.panel1.TabIndex = 11;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 34);
+            this.label1.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 23);
             this.label1.TabIndex = 11;
@@ -60,8 +65,8 @@
             // 
             // lblamount
             // 
-            this.lblamount.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblamount.Location = new System.Drawing.Point(70, 34);
+            this.lblamount.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblamount.Location = new System.Drawing.Point(70, 57);
             this.lblamount.Name = "lblamount";
             this.lblamount.Size = new System.Drawing.Size(77, 23);
             this.lblamount.TabIndex = 10;
@@ -84,12 +89,32 @@
             // 
             // lblname
             // 
-            this.lblname.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblname.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblname.Location = new System.Drawing.Point(3, 3);
             this.lblname.Name = "lblname";
             this.lblname.Size = new System.Drawing.Size(76, 16);
             this.lblname.TabIndex = 9;
             this.lblname.Text = "Name";
+            // 
+            // lbldate
+            // 
+            this.lbldate.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldate.Location = new System.Drawing.Point(70, 34);
+            this.lbldate.Name = "lbldate";
+            this.lbldate.Size = new System.Drawing.Size(77, 23);
+            this.lbldate.TabIndex = 10;
+            this.lbldate.Text = "lbldate";
+            this.lbldate.Visible = false;
+            // 
+            // lbldatecaption
+            // 
+            this.lbldatecaption.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldatecaption.Location = new System.Drawing.Point(3, 34);
+            this.lbldatecaption.Name = "lbldatecaption";
+            this.lbldatecaption.Size = new System.Drawing.Size(61, 23);
+            this.lbldatecaption.TabIndex = 11;
+            this.lbldatecaption.Text = "Billdate :";
+            this.lbldatecaption.Visible = false;
             // 
             // billCtrl
             // 
@@ -98,7 +123,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 3, 10, 10);
             this.Name = "billCtrl";
-            this.Size = new System.Drawing.Size(150, 76);
+            this.Size = new System.Drawing.Size(150, 86);
             this.Load += new System.EventHandler(this.billCtrl_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -112,5 +137,7 @@
         public System.Windows.Forms.Button btnview;
         public System.Windows.Forms.Label lblname;
         public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label lbldatecaption;
+        public System.Windows.Forms.Label lbldate;
     }
 }

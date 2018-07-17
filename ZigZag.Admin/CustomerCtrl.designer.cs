@@ -30,10 +30,10 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.productspnl = new System.Windows.Forms.FlowLayoutPanel();
-            this.toppnl = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.addCustomer1 = new ZigZag.Admin.AddCustomer();
+            this.toppnl = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.btncontrol1 = new ZigZag.Admin.btncontrol();
             this.panel1.SuspendLayout();
             this.productspnl.SuspendLayout();
@@ -64,6 +64,14 @@
             this.productspnl.TabIndex = 1;
             this.productspnl.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.productspnl_ControlAdded);
             // 
+            // addCustomer1
+            // 
+            this.addCustomer1.Location = new System.Drawing.Point(3, 3);
+            this.addCustomer1.Name = "addCustomer1";
+            this.addCustomer1.Size = new System.Drawing.Size(915, 451);
+            this.addCustomer1.TabIndex = 0;
+            this.addCustomer1.Load += new System.EventHandler(this.addCustomer1_Load_1);
+            // 
             // toppnl
             // 
             this.toppnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(82)))), ((int)(((byte)(163)))));
@@ -77,6 +85,15 @@
             this.toppnl.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.toppnl_ControlAdded);
             this.toppnl.Paint += new System.Windows.Forms.PaintEventHandler(this.toppnl_Paint);
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.btncontrol1);
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(810, 44);
+            this.panel2.TabIndex = 2;
+            // 
             // label1
             // 
             this.label1.AutoEllipsis = true;
@@ -87,22 +104,6 @@
             this.label1.Size = new System.Drawing.Size(401, 44);
             this.label1.TabIndex = 1;
             this.label1.Text = "Customers";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.btncontrol1);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(810, 44);
-            this.panel2.TabIndex = 2;
-            // 
-            // addCustomer1
-            // 
-            this.addCustomer1.Location = new System.Drawing.Point(3, 3);
-            this.addCustomer1.Name = "addCustomer1";
-            this.addCustomer1.Size = new System.Drawing.Size(915, 451);
-            this.addCustomer1.TabIndex = 0;
             // 
             // btncontrol1
             // 

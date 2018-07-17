@@ -54,6 +54,11 @@ namespace ZigZag.Admin
                     this.parentform.orderCtrl1.parentform = this.parentform;
                     this.parentform.orderCtrl1.BringToFront();
                 }
+                else
+                {
+                    //OrderForm order = new OrderForm();
+                    //order.ShowDialog();
+                }
 
             }
             catch (Exception)

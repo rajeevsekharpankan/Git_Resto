@@ -136,4 +136,4 @@ D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\bin\Debug\MetroFramework.dll
 D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.RestoReportCtrl.resources
 D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.PurchaseReportCtrl.resources
 D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.RestoManagement.resources
-D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\bin\Debug\RestoDB.accdb
+D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.OrderForm.resources

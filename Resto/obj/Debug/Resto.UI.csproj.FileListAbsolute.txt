@@ -81,4 +81,3 @@ D:\Personal Projects\naveen\Git_Resto\Resto\obj\Debug\Resto.UI.csproj.GenerateRe
 D:\Personal Projects\naveen\Git_Resto\Resto\obj\Debug\Resto.UI.csproj.CoreCompileInputs.cache
 D:\Personal Projects\naveen\Git_Resto\Resto\obj\Debug\Resto.UI.exe
 D:\Personal Projects\naveen\Git_Resto\Resto\obj\Debug\Resto.UI.pdb
-D:\Personal Projects\naveen\Git_Resto\Resto\bin\Debug\RestoDB.accdb

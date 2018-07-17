@@ -89,5 +89,10 @@ namespace ZigZag.Admin
         {
             addCustomer1.FillCustomer();
         }
+
+        private void addCustomer1_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -30,8 +30,11 @@ namespace ZigZag.Admin
                 {
                     bill = new billCtrl();
                     bill.lblname.Text = item.billno.ToString();
-                    bill.lblamount.Text = item.amount.ToString();
+                    bill.lblamount.Text = string.Format("{0:0.00}", item.amount);
                     bill.ismanagement = true;
+                    bill.lbldate.Text = item.billdate.ToShortDateString();
+                    bill.lbldatecaption.Visible = true;
+                    bill.lbldate.Visible = true;
                     pnlbills.Controls.Add(bill);
                 }
                 bills = manager.SelectFinalBillsWitoutPc();
@@ -39,7 +42,10 @@ namespace ZigZag.Admin
                 {
                     bill = new billCtrl();
                     bill.lblname.Text = item.billno.ToString();
-                    bill.lblamount.Text = item.amount.ToString();
+                    bill.lblamount.Text =string.Format("{0:0.00}", item.amount);
+                    bill.lbldate.Text = item.billdate.ToShortDateString();
+                    bill.lbldatecaption.Visible = true;
+                    bill.lbldate.Visible = true;
                     bill.ismanagement = true;
                     pnlbills.Controls.Add(bill);
                 }
