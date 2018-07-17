@@ -36,6 +36,7 @@
             this.dtpfrom = new System.Windows.Forms.DateTimePicker();
             this.dtpto = new System.Windows.Forms.DateTimePicker();
             this.btnfind = new Bunifu.Framework.UI.BunifuTileButton();
+            this.pnlbills = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -133,10 +134,19 @@
             this.btnfind.TabIndex = 412;
             this.btnfind.Click += new System.EventHandler(this.btnfind_Click);
             // 
+            // pnlbills
+            // 
+            this.pnlbills.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlbills.Location = new System.Drawing.Point(0, 102);
+            this.pnlbills.Name = "pnlbills";
+            this.pnlbills.Size = new System.Drawing.Size(997, 406);
+            this.pnlbills.TabIndex = 1;
+            // 
             // BillManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.pnlbills);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "BillManagement";
@@ -157,5 +167,6 @@
         internal System.Windows.Forms.DateTimePicker dtpto;
         internal System.Windows.Forms.DateTimePicker dtpfrom;
         private Bunifu.Framework.UI.BunifuTileButton btnfind;
+        public System.Windows.Forms.FlowLayoutPanel pnlbills;
     }
 }

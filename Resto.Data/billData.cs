@@ -264,5 +264,26 @@ namespace Resto.Data
                 return pcid;
             }
         }
+        public List<billmasterModel> SelectFinalBillsWithPc()
+        {
+            con = DBConnection.GetInstance().GetOleDbConnection();
+            using (con)
+            {
+
+                return con.Query<billmasterModel>("sp_FinalBill_select_all_with_pc", null, null, false, null, CommandType.StoredProcedure).ToList();
+
+            }
+        }
+        public List<billmasterModel> SelectFinalBillsWitoutPc()
+        {
+            con = DBConnection.GetInstance().GetOleDbConnection();
+            using (con)
+            {
+
+                return con.Query<billmasterModel>("sp_FinalBill_select_all_without_pc", null, null, false, null, CommandType.StoredProcedure).ToList();
+
+            }
+        }
+
     }
 }

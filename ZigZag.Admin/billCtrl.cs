@@ -13,6 +13,7 @@ namespace ZigZag.Admin
 {
     public partial class billCtrl : CommonCtrl
     {
+        public Boolean ismanagement { get; set; }
         public billCtrl()
         {
             InitializeComponent();
@@ -40,17 +41,19 @@ namespace ZigZag.Admin
 
         private void billCtrl_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnview_Click(object sender, EventArgs e)
         {
             try
             {
-                this.parentform.orderCtrl1.FillDetails((billmasterModel)this.Tag);
-                this.parentform.orderCtrl1.parentform = this.parentform;
-                this.parentform.orderCtrl1.BringToFront();
-
+                if (!ismanagement)
+                {
+                    this.parentform.orderCtrl1.FillDetails((billmasterModel)this.Tag);
+                    this.parentform.orderCtrl1.parentform = this.parentform;
+                    this.parentform.orderCtrl1.BringToFront();
+                }
 
             }
             catch (Exception)

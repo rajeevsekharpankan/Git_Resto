@@ -46,5 +46,13 @@ namespace Resto.Manager
         {
             return data.UpdatePaidStatus(pcid);
         }
+        public List<billmasterModel> SelectFinalBillsWithPc()
+        {
+            return data.SelectFinalBillsWithPc();
+        }
+        public List<billmasterModel> SelectFinalBillsWitoutPc()
+        {
+            return data.SelectFinalBillsWitoutPc();
+        }
     }
 }

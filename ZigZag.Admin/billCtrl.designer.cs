@@ -38,7 +38,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.Gold;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblamount);
             this.panel1.Controls.Add(this.btnview);
@@ -65,7 +65,7 @@
             this.lblamount.Name = "lblamount";
             this.lblamount.Size = new System.Drawing.Size(77, 23);
             this.lblamount.TabIndex = 10;
-            this.lblamount.Text = "which is used as a placeholder";
+            this.lblamount.Text = "0";
             // 
             // btnview
             // 
