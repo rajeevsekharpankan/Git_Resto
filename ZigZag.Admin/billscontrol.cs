@@ -15,7 +15,7 @@ namespace ZigZag.Admin
 {
     public partial class billscontrol : UserControl
     {
-        public delegate void AddOrderItemDelegate(SellItemCtrl item);
+        public delegate Boolean AddOrderItemDelegate(SellItemCtrl item);
         public delegate void DeleteOrderItemDelegate(SellItemCtrl item);
         public delegate void UpdateAmountDelegate();
         billManager manager = new billManager();
@@ -42,8 +42,9 @@ namespace ZigZag.Admin
                 MessageBox.Show(ex.ToString());
             }
         }
-        public void AddItemCallbackFn(SellItemCtrl orderitem)
+        public Boolean AddItemCallbackFn(SellItemCtrl orderitem)
         {
+            Boolean returndata = false;
             orderitem.btndelete.Visible = true;
             orderitem.btnaddtocart.Visible = false;
 
@@ -65,15 +66,17 @@ namespace ZigZag.Admin
                 billitem.txtqty.Value += qty;
                 billitem.lblqty.Text = (int.Parse(billitem.lblqty.Text) + qty).ToString();
                 orderitem.Tag = orderitem.product;
+                returndata = true;
             }
             else
             {
                 //form1.products.Add(orderitem.product);
                 orderitem.Tag = orderitem.product;
                 pnlbill.Controls.Add(orderitem);
+                returndata = true;
             }
             UpdateAmount();
-
+            return returndata;
         }
 
         public void DeleteCallBackfn(SellItemCtrl orderitem)

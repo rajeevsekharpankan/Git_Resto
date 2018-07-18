@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Resto.Models;
 using Resto.Manager;
 using System.Configuration;
+using System.Threading;
 
 namespace ZigZag.Admin
 {
@@ -42,7 +43,7 @@ namespace ZigZag.Admin
             this.Tag = product;
         }
 
-        private void btnaddtocart_Click(object sender, EventArgs e)
+        private async void btnaddtocart_Click(object sender, EventArgs e)
         {
             if (!(txtqty.Value > 0))
             {
@@ -56,8 +57,12 @@ namespace ZigZag.Admin
             }
             this.product.qty = int.Parse(this.txtqty.Value.ToString());
             SellItemCtrl item = new SellItemCtrl(currentitem);
+            lblresponse.Visible = true;
+            await Task.Delay(500).ConfigureAwait(AddOrderItemCallback(item));
             AddOrderItemCallback(item);
+           // Thread.Sleep(5000);
             this.txtqty.Value = 1;
+            lblresponse.Visible = false;
         }
         billManager manager = new billManager();
         int currentstock = 0;
@@ -110,6 +115,19 @@ namespace ZigZag.Admin
             {
 
                 throw;
+            }
+        }
+
+        private void tmr_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+
+                Utilities.ShowError(ex.Message.ToString() + Environment.NewLine + ex.StackTrace.ToString());
             }
         }
     }

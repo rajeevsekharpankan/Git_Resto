@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.tmr = new System.Windows.Forms.Timer(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lblresponse = new System.Windows.Forms.Label();
             this.lblqty = new System.Windows.Forms.Label();
             this.txtqty = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,9 +46,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.picitem)).BeginInit();
             this.SuspendLayout();
             // 
+            // tmr
+            // 
+            this.tmr.Interval = 1;
+            this.tmr.Tick += new System.EventHandler(this.tmr_Tick);
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.lblresponse);
             this.panel4.Controls.Add(this.lblqty);
             this.panel4.Controls.Add(this.txtqty);
             this.panel4.Controls.Add(this.label2);
@@ -61,6 +70,18 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(197, 216);
             this.panel4.TabIndex = 4;
+            // 
+            // lblresponse
+            // 
+            this.lblresponse.BackColor = System.Drawing.Color.Gold;
+            this.lblresponse.Font = new System.Drawing.Font("Lucida Bright", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblresponse.Location = new System.Drawing.Point(100, 160);
+            this.lblresponse.Name = "lblresponse";
+            this.lblresponse.Size = new System.Drawing.Size(93, 26);
+            this.lblresponse.TabIndex = 8;
+            this.lblresponse.Text = "Adding";
+            this.lblresponse.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblresponse.Visible = false;
             // 
             // lblqty
             // 
@@ -194,5 +215,7 @@
         public System.Windows.Forms.Label lblprice;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label lblqty;
+        private System.Windows.Forms.Label lblresponse;
+        private System.Windows.Forms.Timer tmr;
     }
 }
