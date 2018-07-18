@@ -21,6 +21,12 @@ namespace ZigZag.Admin
         public billscontrol.UpdateAmountDelegate UpdateAmountCallback;
         public item CurrentItem { get; set; }
         public ItemModel product { get; set; }
+
+        public SellItemCtrl()
+        {
+
+        }
+
         public SellItemCtrl(ItemModel product)
         {
             string imagepath = ConfigurationManager.AppSettings["imagepath"].ToString();

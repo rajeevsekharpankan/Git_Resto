@@ -57,14 +57,15 @@ namespace ZigZag.Admin
                 else
                 {
                     if (orderform == null) orderform = new OrderForm();
+                    orderform.FillBillDetails((billmasterModel)this.Tag);
                     orderform.ShowDialog();
                 }
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                Utilities.ShowError(ex.Message.ToString() + Environment.NewLine + ex.StackTrace.ToString());
             }
         }
     }

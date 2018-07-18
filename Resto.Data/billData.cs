@@ -122,7 +122,7 @@ namespace Resto.Data
                     cmd.Parameters.Add("@customername", "");
                     cmd.Parameters.Add("@amount", bill.amount);
                     cmd.Parameters.Add("@billdate", bill.billdate.ToShortDateString());
-                    cmd.Parameters.Add("@userid", Utilities.currentuser.userid);
+                    cmd.Parameters.Add("@userid", Utilities.currentuser == null ? "rajeev" : Utilities.currentuser.userid);
                     cmd.Parameters.Add("@ispaid", bill.ispaid);
                     //cmd.Parameters.Add("@isserved", bill.isserved);
                     cmd.Parameters.Add("@pcid", Utilities.currentpc.id);
@@ -230,6 +230,17 @@ namespace Resto.Data
                 DynamicParameters param = new DynamicParameters();
                 param.Add("@billno", billno, DbType.Int16);
                 return con.Query<billdetails>("sp_billdetails_by_billno", param, null, false, null, CommandType.StoredProcedure).ToList();
+            }
+        }
+        public List<billdetails> GetFinalBillDetails(int billno)
+        {
+            con = DBConnection.GetInstance().GetOleDbConnection();
+
+            using (con)
+            {
+                DynamicParameters param = new DynamicParameters();
+                param.Add("@billno", billno, DbType.Int16);
+                return con.Query<billdetails>("sp_finalbilldetails_by_billno", param, null, false, null, CommandType.StoredProcedure).ToList();
             }
         }
         public int GetStock(int itemid)

@@ -54,5 +54,9 @@ namespace Resto.Manager
         {
             return data.SelectFinalBillsWitoutPc();
         }
+        public List<billdetails> GetFinalBillDetails(int billno)
+        {
+            return data.GetFinalBillDetails(billno);
+        }
     }
 }

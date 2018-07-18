@@ -33,20 +33,23 @@
             // 
             // pnlbills
             // 
+            this.pnlbills.AutoScroll = true;
             this.pnlbills.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlbills.Location = new System.Drawing.Point(0, 0);
+            this.pnlbills.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pnlbills.Name = "pnlbills";
-            this.pnlbills.Size = new System.Drawing.Size(717, 465);
+            this.pnlbills.Size = new System.Drawing.Size(1047, 487);
             this.pnlbills.TabIndex = 0;
             // 
             // OrderForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(717, 465);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(1047, 487);
             this.Controls.Add(this.pnlbills);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "OrderForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OrderForm";
             this.ResumeLayout(false);
 

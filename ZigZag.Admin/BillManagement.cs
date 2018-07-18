@@ -25,7 +25,10 @@ namespace ZigZag.Admin
             try
             {
                 List<billmasterModel> bills = manager.SelectFinalBillsWithPc();
+                bills.InsertRange(bills.Count - 1, manager.SelectFinalBillsWitoutPc());
+                bills = bills.OrderByDescending(x => x.billno).ToList();
                 billCtrl bill = null;
+                pnlbills.Controls.Clear();
                 foreach (billmasterModel item in bills)
                 {
                     bill = new billCtrl();
@@ -35,20 +38,22 @@ namespace ZigZag.Admin
                     bill.lbldate.Text = item.billdate.ToShortDateString();
                     bill.lbldatecaption.Visible = true;
                     bill.lbldate.Visible = true;
+                    bill.Tag = item;
                     pnlbills.Controls.Add(bill);
                 }
-                bills = manager.SelectFinalBillsWitoutPc();
-                foreach (billmasterModel item in bills)
-                {
-                    bill = new billCtrl();
-                    bill.lblname.Text = item.billno.ToString();
-                    bill.lblamount.Text =string.Format("{0:0.00}", item.amount);
-                    bill.lbldate.Text = item.billdate.ToShortDateString();
-                    bill.lbldatecaption.Visible = true;
-                    bill.lbldate.Visible = true;
-                    bill.ismanagement = true;
-                    pnlbills.Controls.Add(bill);
-                }
+                //bills = manager.SelectFinalBillsWitoutPc();
+                //foreach (billmasterModel item in bills)
+                //{
+                //    bill = new billCtrl();
+                //    bill.lblname.Text = item.billno.ToString();
+                //    bill.lblamount.Text = string.Format("{0:0.00}", item.amount);
+                //    bill.lbldate.Text = item.billdate.ToShortDateString();
+                //    bill.lbldatecaption.Visible = true;
+                //    bill.lbldate.Visible = true;
+                //    bill.ismanagement = true;
+                //    bill.Tag = item;
+                //    pnlbills.Controls.Add(bill);
+                //}
             }
             catch (Exception ex)
             {
