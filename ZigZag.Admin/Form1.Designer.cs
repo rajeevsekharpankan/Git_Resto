@@ -44,7 +44,6 @@
             this.button11 = new System.Windows.Forms.Button();
             this.stockCtrl1 = new ZigZag.Admin.StockCtrl();
             this.billscontrol1 = new ZigZag.Admin.billscontrol();
-            this.pcBillingCtrl1 = new ZigZag.Admin.PcBillingCtrl();
             this.zigzagHome1 = new ZigZag.Admin.ZigzagHome();
             this.suppliers1 = new ZigZag.Admin.Suppliers();
             this.purchaseCtrl1 = new ZigZag.Admin.PurchaseCtrl();
@@ -74,6 +73,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.btnItemmaster = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btntakeaway = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -154,7 +154,6 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.stockCtrl1);
             this.splitContainer1.Panel2.Controls.Add(this.billscontrol1);
-            this.splitContainer1.Panel2.Controls.Add(this.pcBillingCtrl1);
             this.splitContainer1.Panel2.Controls.Add(this.zigzagHome1);
             this.splitContainer1.Panel2.Controls.Add(this.suppliers1);
             this.splitContainer1.Panel2.Controls.Add(this.purchaseCtrl1);
@@ -291,16 +290,6 @@
             this.billscontrol1.TabIndex = 6;
             this.billscontrol1.Load += new System.EventHandler(this.billscontrol1_Load);
             // 
-            // pcBillingCtrl1
-            // 
-            this.pcBillingCtrl1.categoryid = 0;
-            this.pcBillingCtrl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pcBillingCtrl1.Location = new System.Drawing.Point(0, 0);
-            this.pcBillingCtrl1.Name = "pcBillingCtrl1";
-            this.pcBillingCtrl1.parentform = null;
-            this.pcBillingCtrl1.Size = new System.Drawing.Size(867, 596);
-            this.pcBillingCtrl1.TabIndex = 5;
-            // 
             // zigzagHome1
             // 
             this.zigzagHome1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(82)))), ((int)(((byte)(163)))));
@@ -410,6 +399,7 @@
             this.pnlmenu.Controls.Add(this.btnpclist);
             this.pnlmenu.Controls.Add(this.btnstock);
             this.pnlmenu.Controls.Add(this.btndirectbilling);
+            this.pnlmenu.Controls.Add(this.btntakeaway);
             this.pnlmenu.Controls.Add(this.btnbill);
             this.pnlmenu.Controls.Add(this.button5);
             this.pnlmenu.Controls.Add(this.button4);
@@ -478,7 +468,7 @@
             this.btnusers.ForeColor = System.Drawing.Color.White;
             this.btnusers.Image = ((System.Drawing.Image)(resources.GetObject("btnusers.Image")));
             this.btnusers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnusers.Location = new System.Drawing.Point(11, 462);
+            this.btnusers.Location = new System.Drawing.Point(11, 500);
             this.btnusers.Name = "btnusers";
             this.btnusers.Size = new System.Drawing.Size(197, 30);
             this.btnusers.TabIndex = 4;
@@ -547,7 +537,7 @@
             this.btnmanagement.ForeColor = System.Drawing.Color.White;
             this.btnmanagement.Image = global::ZigZag.Admin.Properties.Resources.lap;
             this.btnmanagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnmanagement.Location = new System.Drawing.Point(6, 534);
+            this.btnmanagement.Location = new System.Drawing.Point(6, 572);
             this.btnmanagement.Name = "btnmanagement";
             this.btnmanagement.Size = new System.Drawing.Size(197, 30);
             this.btnmanagement.TabIndex = 4;
@@ -564,7 +554,7 @@
             this.btnreports.ForeColor = System.Drawing.Color.White;
             this.btnreports.Image = global::ZigZag.Admin.Properties.Resources.lap;
             this.btnreports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnreports.Location = new System.Drawing.Point(6, 498);
+            this.btnreports.Location = new System.Drawing.Point(6, 536);
             this.btnreports.Name = "btnreports";
             this.btnreports.Size = new System.Drawing.Size(197, 30);
             this.btnreports.TabIndex = 4;
@@ -581,7 +571,7 @@
             this.btnpclist.ForeColor = System.Drawing.Color.White;
             this.btnpclist.Image = global::ZigZag.Admin.Properties.Resources.lap;
             this.btnpclist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnpclist.Location = new System.Drawing.Point(9, 426);
+            this.btnpclist.Location = new System.Drawing.Point(9, 464);
             this.btnpclist.Name = "btnpclist";
             this.btnpclist.Size = new System.Drawing.Size(197, 30);
             this.btnpclist.TabIndex = 4;
@@ -598,7 +588,7 @@
             this.btnstock.ForeColor = System.Drawing.Color.White;
             this.btnstock.Image = ((System.Drawing.Image)(resources.GetObject("btnstock.Image")));
             this.btnstock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnstock.Location = new System.Drawing.Point(10, 390);
+            this.btnstock.Location = new System.Drawing.Point(10, 428);
             this.btnstock.Name = "btnstock";
             this.btnstock.Size = new System.Drawing.Size(197, 30);
             this.btnstock.TabIndex = 4;
@@ -615,7 +605,7 @@
             this.btndirectbilling.ForeColor = System.Drawing.Color.White;
             this.btndirectbilling.Image = ((System.Drawing.Image)(resources.GetObject("btndirectbilling.Image")));
             this.btndirectbilling.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btndirectbilling.Location = new System.Drawing.Point(10, 354);
+            this.btndirectbilling.Location = new System.Drawing.Point(10, 392);
             this.btndirectbilling.Name = "btndirectbilling";
             this.btndirectbilling.Size = new System.Drawing.Size(197, 30);
             this.btndirectbilling.TabIndex = 4;
@@ -636,7 +626,7 @@
             this.btnbill.Name = "btnbill";
             this.btnbill.Size = new System.Drawing.Size(197, 30);
             this.btnbill.TabIndex = 4;
-            this.btnbill.Text = "       Ordering";
+            this.btnbill.Text = "       Pc Ordering";
             this.btnbill.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnbill.UseVisualStyleBackColor = true;
             this.btnbill.Click += new System.EventHandler(this.btnbill_Click);
@@ -683,9 +673,9 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(1, 566);
+            this.button3.Location = new System.Drawing.Point(6, 626);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(197, 54);
+            this.button3.Size = new System.Drawing.Size(197, 50);
             this.button3.TabIndex = 4;
             this.button3.Text = "       Collection";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -713,6 +703,22 @@
             // 
             this.timer1.Interval = 20;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // btntakeaway
+            // 
+            this.btntakeaway.FlatAppearance.BorderSize = 0;
+            this.btntakeaway.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btntakeaway.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntakeaway.ForeColor = System.Drawing.Color.White;
+            this.btntakeaway.Image = ((System.Drawing.Image)(resources.GetObject("btntakeaway.Image")));
+            this.btntakeaway.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btntakeaway.Location = new System.Drawing.Point(9, 354);
+            this.btntakeaway.Name = "btntakeaway";
+            this.btntakeaway.Size = new System.Drawing.Size(197, 30);
+            this.btntakeaway.TabIndex = 4;
+            this.btntakeaway.Text = "       Takeaway";
+            this.btntakeaway.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btntakeaway.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -779,7 +785,7 @@
         private System.Windows.Forms.Button btnsuppliers;
         private Suppliers suppliers1;
         private System.Windows.Forms.Button btndirectbilling;
-        private PcBillingCtrl pcBillingCtrl1;
+        //private PcBillingCtrl pcBillingCtrl1;
         public billscontrol billscontrol1;
         private System.Windows.Forms.Button btnusers;
         private UserCreationCtrl userCreationCtrl1;
@@ -788,6 +794,7 @@
         private System.Windows.Forms.Button btnreports;
         public System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Button btnmanagement;
+        private System.Windows.Forms.Button btntakeaway;
     }
 }
 

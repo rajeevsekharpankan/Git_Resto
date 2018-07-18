@@ -19,7 +19,7 @@ namespace ZigZag.Admin
             InitializeComponent();
         }
         public ZigZag.Admin.CustomerCtrl.AddCustomerDelegate AddCustomerCallback;
-        public ZigZag.Admin.PcBillingCtrl.AddBillItemDelegate AddItemCallbackFn;
+       public ZigZag.Admin.PcBillingCtrl.AddBillItemDelegate AddItemCallbackFn;
         private void btn_Click(object sender, EventArgs e)
         {
             try

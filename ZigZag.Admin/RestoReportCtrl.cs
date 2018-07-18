@@ -25,11 +25,11 @@ namespace ZigZag.Admin
         {
             try
             {
-                if (billManagement == null) billManagement = new BillManagement();
-                this.parentform.splitContainer1.Panel2.Controls.Add(billManagement);
-                billManagement.Dock = DockStyle.Fill;
-                billManagement.parentform = this.parentform;
-                this.billManagement.BringToFront();
+            //    if (billManagement == null) billManagement = new BillManagement();
+            //    this.parentform.splitContainer1.Panel2.Controls.Add(billManagement);
+            //    billManagement.Dock = DockStyle.Fill;
+            //    billManagement.parentform = this.parentform;
+            //    this.billManagement.BringToFront();
             }
             catch (Exception ex)
             {
@@ -42,11 +42,11 @@ namespace ZigZag.Admin
         {
             try
             {
-                if (PurchaseReportCtrl1 == null) PurchaseReportCtrl1 = new PurchaseReportCtrl();
-                this.parentform.splitContainer1.Panel2.Controls.Add(PurchaseReportCtrl1);
-                PurchaseReportCtrl1.Dock = DockStyle.Fill;
-                PurchaseReportCtrl1.parentform = this.parentform;
-                this.PurchaseReportCtrl1.BringToFront();
+                //if (PurchaseReportCtrl1 == null) PurchaseReportCtrl1 = new PurchaseReportCtrl();
+                //this.parentform.splitContainer1.Panel2.Controls.Add(PurchaseReportCtrl1);
+                //PurchaseReportCtrl1.Dock = DockStyle.Fill;
+                //PurchaseReportCtrl1.parentform = this.parentform;
+                //this.PurchaseReportCtrl1.BringToFront();
             }
             catch (Exception ex)
             {

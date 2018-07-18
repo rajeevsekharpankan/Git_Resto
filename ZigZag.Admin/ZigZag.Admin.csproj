@@ -135,17 +135,17 @@
     <Compile Include="OrderForm.Designer.cs">
       <DependentUpon>OrderForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PcBillingCtrl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PcBillingCtrl.designer.cs">
-      <DependentUpon>PcBillingCtrl.cs</DependentUpon>
-    </Compile>
     <Compile Include="OrderCtrl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="OrderCtrl.designer.cs">
       <DependentUpon>OrderCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PcBillingCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PcBillingCtrl.designer.cs">
+      <DependentUpon>PcBillingCtrl.cs</DependentUpon>
     </Compile>
     <Compile Include="PcButtonCtrl.cs">
       <SubType>UserControl</SubType>
@@ -164,6 +164,12 @@
     </Compile>
     <Compile Include="PcListCtrl.designer.cs">
       <DependentUpon>PcListCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PcSelectionCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PcSelectionCtrl.Designer.cs">
+      <DependentUpon>PcSelectionCtrl.cs</DependentUpon>
     </Compile>
     <Compile Include="Productctrl.cs">
       <SubType>UserControl</SubType>
@@ -305,11 +311,11 @@
     <EmbeddedResource Include="OrderForm.resx">
       <DependentUpon>OrderForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PcBillingCtrl.resx">
-      <DependentUpon>PcBillingCtrl.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="OrderCtrl.resx">
       <DependentUpon>OrderCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PcBillingCtrl.resx">
+      <DependentUpon>PcBillingCtrl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PcButtonCtrl.resx">
       <DependentUpon>PcButtonCtrl.cs</DependentUpon>
@@ -319,6 +325,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PcListCtrl.resx">
       <DependentUpon>PcListCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PcSelectionCtrl.resx">
+      <DependentUpon>PcSelectionCtrl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Productctrl.resx">
       <DependentUpon>Productctrl.cs</DependentUpon>

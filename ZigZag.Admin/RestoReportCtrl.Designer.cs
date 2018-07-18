@@ -86,6 +86,7 @@
             this.btnpurchase.Name = "btnpurchase";
             this.btnpurchase.Size = new System.Drawing.Size(128, 129);
             this.btnpurchase.TabIndex = 0;
+            this.btnpurchase.Visible = false;
             this.btnpurchase.Click += new System.EventHandler(this.btnpurchase_Click);
             // 
             // bunifuTileButton1
@@ -107,6 +108,7 @@
             this.bunifuTileButton1.Name = "bunifuTileButton1";
             this.bunifuTileButton1.Size = new System.Drawing.Size(128, 129);
             this.bunifuTileButton1.TabIndex = 0;
+            this.bunifuTileButton1.Visible = false;
             this.bunifuTileButton1.Click += new System.EventHandler(this.btnpurchase_Click);
             // 
             // RestoReportCtrl

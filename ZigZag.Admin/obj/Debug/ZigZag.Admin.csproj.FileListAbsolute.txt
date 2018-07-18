@@ -108,7 +108,6 @@ D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.Form1.
 D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.item.resources
 D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.ItemListCtrl.resources
 D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.LatestOrders.resources
-D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.PcBillingCtrl.resources
 D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.OrderCtrl.resources
 D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.PcButtonCtrl.resources
 D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.PcCtrl.resources
@@ -138,4 +137,5 @@ D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.Purcha
 D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.RestoManagement.resources
 D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.BilledOrdersCtrl.resources
 D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.OrderForm.resources
-D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\bin\Debug\RestoDB.accdb
+D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.PcBillingCtrl.resources
+D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.PcSelectionCtrl.resources

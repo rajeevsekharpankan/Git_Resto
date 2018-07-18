@@ -36,9 +36,10 @@ namespace ZigZag.Admin
 
 
         }
+        public List<CategoryModel> catagories = null;
         public void FillCatagories()
         {
-            List<CategoryModel> catagories = manager.GetCategories();
+            catagories = manager.GetCategories();
             toppnl.Controls.Clear();
             foreach (CategoryModel item in catagories)
             {
@@ -48,13 +49,13 @@ namespace ZigZag.Admin
                 btn.AddItemCallbackFn = new AddBillItemDelegate(AddItemCallbackFn);
                 toppnl.Controls.Add(btn);
             }
-            if (catagories.Count > 0) AddItemCallbackFn(catagories.FirstOrDefault());
+            // if (catagories.Count > 0) AddItemCallbackFn(catagories.FirstOrDefault());
         }
         private void AddOrderItem(SellItemCtrl item)
         {
 
         }
-        private void AddItemCallbackFn(CategoryModel product)
+        public void AddItemCallbackFn(CategoryModel product)
         {
 
             List<Control> controls = this.toppnl.Controls.Find("btncontrol", true).ToList();

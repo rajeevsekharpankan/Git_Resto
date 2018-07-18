@@ -180,7 +180,7 @@
             this.btnsent.ActiveLineColor = System.Drawing.Color.White;
             this.btnsent.BackColor = System.Drawing.SystemColors.Control;
             this.btnsent.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnsent.BackgroundImage")));
-            this.btnsent.ButtonText = "Sent";
+            this.btnsent.ButtonText = "Poceed Order";
             this.btnsent.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnsent.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsent.ForeColor = System.Drawing.Color.White;

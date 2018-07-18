@@ -17,6 +17,15 @@ namespace ZigZag.Admin
         int panelWidth;
         bool Hidden;
         public List<Product> products = new List<Product>();
+
+        /// <summary>
+        /// toast
+        /// </summary>
+        /// 
+        private Timer timer;
+        private int startPosX;
+        private int startPosY;
+
         public Form1()
         {
             InitializeComponent();
@@ -27,6 +36,8 @@ namespace ZigZag.Admin
             Hidden = false;
         }
 
+        public PcBillingCtrl pcBillingCtrl1 { get; set; }
+        public PcSelectionCtrl PcSelectionCtrl1 { get; set; }
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -37,6 +48,7 @@ namespace ZigZag.Admin
 
         private void btnItemmaster_click(object sender, EventArgs e)
         {
+            
             ClearButtonColor();
             btnItemmaster.BackColor = Color.FromArgb(57, 82, 163);
             SidePanel.Height = btnItemmaster.Height;
@@ -82,9 +94,13 @@ namespace ZigZag.Admin
             btnbill.BackColor = Color.FromArgb(57, 82, 163);
             SidePanel.Height = btnbill.Height;
             SidePanel.Top = btnbill.Top;
-            pcBillingCtrl1.parentform = this;
-            pcBillingCtrl1.FillCatagories();
-            pcBillingCtrl1.BringToFront();
+             if (PcSelectionCtrl1 == null) PcSelectionCtrl1 = new PcSelectionCtrl();
+            PcSelectionCtrl1.Dock = DockStyle.Fill;
+            splitContainer1.Panel2.Controls.Add(PcSelectionCtrl1);
+            PcSelectionCtrl1.parentform = this;
+            PcSelectionCtrl1.FillPcs();
+           
+            PcSelectionCtrl1.BringToFront();
 
         }
 

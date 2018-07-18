@@ -84,6 +84,7 @@
             this.btnpurchase.Name = "btnpurchase";
             this.btnpurchase.Size = new System.Drawing.Size(128, 129);
             this.btnpurchase.TabIndex = 0;
+            this.btnpurchase.Visible = false;
             this.btnpurchase.Click += new System.EventHandler(this.btnpurchase_Click);
             // 
             // RestoManagement

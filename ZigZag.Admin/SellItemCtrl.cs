@@ -15,7 +15,7 @@ namespace ZigZag.Admin
 {
     public partial class SellItemCtrl : CommonCtrl
     {
-        public PcBillingCtrl.AddBillItemDelegate AddItemCallback;
+        //public PcBillingCtrl.AddBillItemDelegate AddItemCallback;
         public billscontrol.AddOrderItemDelegate AddOrderItemCallback;
         public billscontrol.DeleteOrderItemDelegate DeleteItemCallback;
         public billscontrol.UpdateAmountDelegate UpdateAmountCallback;
