@@ -37,10 +37,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblqtycaption = new System.Windows.Forms.Label();
             this.btnaddtocart = new System.Windows.Forms.Button();
-            this.picitem = new System.Windows.Forms.PictureBox();
             this.lblprice = new System.Windows.Forms.Label();
             this.lblproductname = new System.Windows.Forms.Label();
             this.btndelete = new System.Windows.Forms.Button();
+            this.picitem = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtqty)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picitem)).BeginInit();
@@ -144,16 +144,6 @@
             this.btnaddtocart.UseVisualStyleBackColor = false;
             this.btnaddtocart.Click += new System.EventHandler(this.btnaddtocart_Click);
             // 
-            // picitem
-            // 
-            this.picitem.ImageLocation = "Z:\\1.jpg";
-            this.picitem.Location = new System.Drawing.Point(4, 31);
-            this.picitem.Name = "picitem";
-            this.picitem.Size = new System.Drawing.Size(190, 127);
-            this.picitem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picitem.TabIndex = 1;
-            this.picitem.TabStop = false;
-            // 
             // lblprice
             // 
             this.lblprice.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -187,6 +177,15 @@
             this.btndelete.UseVisualStyleBackColor = false;
             this.btndelete.Visible = false;
             this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
+            // 
+            // picitem
+            // 
+            this.picitem.Location = new System.Drawing.Point(4, 31);
+            this.picitem.Name = "picitem";
+            this.picitem.Size = new System.Drawing.Size(190, 127);
+            this.picitem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picitem.TabIndex = 1;
+            this.picitem.TabStop = false;
             // 
             // SellItemCtrl
             // 
