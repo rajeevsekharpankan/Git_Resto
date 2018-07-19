@@ -67,7 +67,7 @@ namespace ZigZag.Admin
             }
             List<ItemModel> products = pmanager.GetItemsByCatagroy_sellable(product.Id);
             productspnl.Controls.Clear();
-            string path = ConfigurationManager.AppSettings["imagepath"];
+            //string path = ConfigurationManager.AppSettings["imagepath"];
             foreach (ItemModel p in products)
             {
                 SellItemCtrl newitem = new SellItemCtrl(p);
@@ -75,7 +75,7 @@ namespace ZigZag.Admin
                 newitem.Tag = p;
                 newitem.lblproductname.Text = p.itemname;
                 newitem.lblprice.Text = string.Format("{0:0.00}", p.price);
-                newitem.picitem.ImageLocation = path + p.imagepath;
+                newitem.picitem.ImageLocation =  p.imagepath;
                 productspnl.Controls.Add(newitem);
 
             }

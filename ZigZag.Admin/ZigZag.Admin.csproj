@@ -405,6 +405,8 @@
   <ItemGroup>
     <None Include="Resources\reporticon.jpg" />
     <None Include="Resources\takeaway.jpg" />
+    <None Include="Resources\take1.jpg" />
+    <None Include="Resources\take2.png" />
     <Content Include="zigzagicon.ico" />
     <None Include="Resources\lap.png" />
     <None Include="Resources\pc.png" />

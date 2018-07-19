@@ -48,7 +48,7 @@ namespace ZigZag.Admin
 
         private void btnItemmaster_click(object sender, EventArgs e)
         {
-            
+
             ClearButtonColor();
             btnItemmaster.BackColor = Color.FromArgb(57, 82, 163);
             SidePanel.Height = btnItemmaster.Height;
@@ -94,12 +94,12 @@ namespace ZigZag.Admin
             btnbill.BackColor = Color.FromArgb(57, 82, 163);
             SidePanel.Height = btnbill.Height;
             SidePanel.Top = btnbill.Top;
-             if (PcSelectionCtrl1 == null) PcSelectionCtrl1 = new PcSelectionCtrl();
+            if (PcSelectionCtrl1 == null) PcSelectionCtrl1 = new PcSelectionCtrl();
             PcSelectionCtrl1.Dock = DockStyle.Fill;
             splitContainer1.Panel2.Controls.Add(PcSelectionCtrl1);
             PcSelectionCtrl1.parentform = this;
             PcSelectionCtrl1.FillPcs();
-           
+
             PcSelectionCtrl1.BringToFront();
 
         }
@@ -272,7 +272,6 @@ namespace ZigZag.Admin
             if (!billscontrol1.isloaded)
             {
                 billscontrol1.isloaded = true;
-                billscontrol1.FillPc();
             }
             billscontrol1.BringToFront();
         }

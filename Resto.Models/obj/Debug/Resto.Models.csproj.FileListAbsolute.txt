@@ -22,4 +22,3 @@ D:\Personal Projects\naveen\Git_Resto\Resto.Models\obj\Debug\Resto.Models.csproj
 D:\Personal Projects\naveen\Git_Resto\Resto.Models\obj\Debug\Resto.Models.csproj.CoreCompileInputs.cache
 D:\Personal Projects\naveen\Git_Resto\Resto.Models\obj\Debug\Resto.Models.dll
 D:\Personal Projects\naveen\Git_Resto\Resto.Models\obj\Debug\Resto.Models.pdb
-D:\Personal Projects\naveen\Git_Resto\Resto.Models\obj\Debug\Resto.Models.csprojResolveAssemblyReference.cache

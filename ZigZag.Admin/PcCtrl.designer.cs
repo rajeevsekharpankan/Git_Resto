@@ -31,8 +31,8 @@
             this.pnlparent = new System.Windows.Forms.Panel();
             this.btndelete = new System.Windows.Forms.Button();
             this.btnedit = new System.Windows.Forms.Button();
-            this.imgitem = new System.Windows.Forms.PictureBox();
             this.lblname = new System.Windows.Forms.Label();
+            this.imgitem = new System.Windows.Forms.PictureBox();
             this.pnlparent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgitem)).BeginInit();
             this.SuspendLayout();
@@ -80,6 +80,16 @@
             this.btnedit.UseVisualStyleBackColor = false;
             this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
             // 
+            // lblname
+            // 
+            this.lblname.AutoSize = true;
+            this.lblname.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblname.Location = new System.Drawing.Point(8, 3);
+            this.lblname.Name = "lblname";
+            this.lblname.Size = new System.Drawing.Size(64, 16);
+            this.lblname.TabIndex = 1;
+            this.lblname.Text = "Pc name";
+            // 
             // imgitem
             // 
             this.imgitem.Image = global::ZigZag.Admin.Properties.Resources.pc;
@@ -90,16 +100,6 @@
             this.imgitem.TabIndex = 1;
             this.imgitem.TabStop = false;
             this.imgitem.Click += new System.EventHandler(this.imgitem_Click);
-            // 
-            // lblname
-            // 
-            this.lblname.AutoSize = true;
-            this.lblname.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblname.Location = new System.Drawing.Point(8, 3);
-            this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(64, 16);
-            this.lblname.TabIndex = 1;
-            this.lblname.Text = "Pc name";
             // 
             // PcCtrl
             // 

@@ -24,12 +24,15 @@ namespace ZigZag.Admin
         {
             List<PcModel> pcs = manager.GetPcs();
             pnlpcs.Controls.Clear();
+            pcs.Add(new PcModel() { id = 0, pcname = "Takeaway" });
+            pcs = pcs.OrderBy(x => x.id).ToList();
             PcCtrl pcctrl;
             foreach (PcModel item in pcs)
             {
                 pcctrl = new PcCtrl();
                 pcctrl.lblname.Text = item.pcname;
                 pcctrl.Tag = item;
+                if (item.id == 0) pcctrl.imgitem.Image = ZigZag.Admin.Properties.Resources.take2;
                 pcctrl.btnedit.Visible = false;
                 pcctrl.btndelete.Visible = false;
                 pcctrl.isInOrder = true;

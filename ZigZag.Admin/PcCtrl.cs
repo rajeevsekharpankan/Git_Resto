@@ -75,6 +75,7 @@ namespace ZigZag.Admin
                     pcBillingCtrl1.parentform = this.parentform;
                     pcBillingCtrl1.Dock = DockStyle.Fill;
                     this.parentform.splitContainer1.Panel2.Controls.Add(pcBillingCtrl1);
+                    this.parentform.billscontrol1.FillPc(this);
                     pcBillingCtrl1.BringToFront();
                     pcBillingCtrl1.AddItemCallbackFn(pcBillingCtrl1.catagories.Count > 0 ? pcBillingCtrl1.catagories.FirstOrDefault() : new CategoryModel() { Id = 0 });
                 }

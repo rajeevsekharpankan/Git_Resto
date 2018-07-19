@@ -22,6 +22,7 @@ namespace ZigZag.Admin
         public List<Product> products = new List<Product>();
         Boolean fmload = false;
         public Boolean isloaded = false;
+        PcCtrl pcCtrl1 = null;
         public billscontrol()
         {
             InitializeComponent();
@@ -104,7 +105,7 @@ namespace ZigZag.Admin
 
         private void btnbillsubmit_Click(object sender, EventArgs e)
         {
-            if (!Validate()) return;
+            if (!ValidateControls()) return;
             try
             {
                 if (!(double.Parse(lblamount.Text) > 0))
@@ -134,10 +135,11 @@ namespace ZigZag.Admin
                 billmaster.machinename = Environment.MachineName;
                 billmaster.billdate = DateTime.Now;
                 billmaster.customerid = 1;
-                billmaster.customername = (rbncash.Checked) ? "cash" : "pc";
+                billmaster.customername = pcCtrl1.lblname.Text;
                 billmaster.billdetails = billdetails;
-                Utilities.currentpc = new PcModel() { id = int.Parse(ddlitems.SelectedValue.ToString()) };
-                billmaster.pcid = (rbncash.Checked) ? 0 : Utilities.currentpc.id;
+
+                Utilities.currentpc = (PcModel)pcCtrl1.Tag;
+                billmaster.pcid = Utilities.currentpc.id;
                 string returndata = manager.InsertFinalBill(billmaster);
                 // lblbillno.Text = returndata;
                 if (returndata != "0") Cleartexts();
@@ -148,105 +150,42 @@ namespace ZigZag.Admin
                 Utilities.ShowError(ex.Message.ToString());
             }
         }
-        public void FillPc()
+        public void FillPc(PcCtrl pc)
         {
-            fmload = true;
-            List<PcModel> pcs = pcmanager.GetPcs();
-            pcs.Insert(0, new PcModel() { id = 0, pcname = "--Select Pc--" });
-            ddlitems.DataSource = pcs;
-            ddlitems.DisplayMember = "pcname";
-            ddlitems.ValueMember = "id";
-            fmload = false;
+            pcCtrl1 = pc;
+            pcCtrl1.Dock = DockStyle.Fill;
+            pnlselected.Controls.Clear();
+            pnlselected.Controls.Add(pcCtrl1);
         }
-        public void FillCstomers()
-        {
-            List<CustomerModel> customers = cmanager.SelectAll();
-            customers.Insert(0, new CustomerModel() { Id = 0, name = "--Select--" });
-            ddlitems.DataSource = customers;
-            ddlitems.DisplayMember = "name";
-            ddlitems.ValueMember = "id";
-        }
+
         private void Cleartexts()
         {
             pnlbill.Controls.Clear();
+            pnlselected.Controls.Clear();
+            pnlselected.Controls.Add(new PcCtrl());
             UpdateAmount();
         }
-        private Boolean Validate()
+        private Boolean ValidateControls()
         {
             Boolean returndata = true;
-            if (rbnPc.Checked)
+            if (pcCtrl1 == null)
             {
-                if (!(int.Parse(ddlitems.SelectedValue.ToString()) > 0))
-                {
-                    Utilities.ShowInfo("Please select a Pc from the list");
-                    ddlitems.Focus();
-                    returndata = false;
-                }
+                Utilities.ShowInfo("Please select a Pc from the list");
+                returndata = false;
             }
             return returndata;
         }
         PcManager pcmanager = new PcManager();
         CustomerManager cmanager = new CustomerManager();
 
-        private void rbnPc_CheckedChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                //ddlitems.DataSource = null;
-                //ddlitems.Items.Clear();
-                ddlitems.Enabled = true;
-                if (rbnPc.Checked)
-                {
-                    FillPc();
-                }
-                else if (rbndirect.Checked)
-                {
-                    FillCstomers();
-                }
-                else if (rbncash.Checked)
-                {
-                    ddlitems.Enabled = false;
-                }
-            }
-            catch (Exception ex)
-            {
 
-                Utilities.ShowError(ex.Message.ToString());
-            }
-        }
         billManager billmanager = new billManager();
 
-        private void ddlitems_SelectedIndexChanged(object sender, EventArgs e)
+        private void billscontrol_Load(object sender, EventArgs e)
         {
             try
             {
-                if (fmload) return;
-                pnlbill.Controls.Clear();
-                if (rbnPc.Checked)
-                {
-                    List<ItemModel> unbilleditems = billmanager.GetAllItemsNotBilledByPc(int.Parse(ddlitems.SelectedValue.ToString()));
-                    SellItemCtrl product = null;
-                    string imagepath = ConfigurationManager.AppSettings["imagepath"].ToString();
-
-                    foreach (ItemModel item in unbilleditems)
-                    {
-
-                        product = new SellItemCtrl(item);
-                        product.lblproductname.Text = item.itemname;
-                        product.lblprice.Text = string.Format("{0:0.00}", item.price);
-                        product.txtqty.Value = item.qty;
-                        product.txtqty.Visible = false;
-                        product.lblqty.Visible = true;
-                        product.lblqty.Text = item.qty.ToString();
-                        product.picitem.ImageLocation = imagepath + item.imagepath;
-                        product.btnaddtocart.Visible = false;
-                        product.btndelete.Visible = false;
-                        product.lblprice.Visible = true;
-
-                        pnlbill.Controls.Add(product);
-                    }
-                }
-                UpdateAmount();
+                this.pnlselected.Controls.Add(new PcCtrl());
             }
             catch (Exception ex)
             {
