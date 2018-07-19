@@ -112,7 +112,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackgroundImage = global::Resto.UI.Properties.Resources.logo;
+            this.panel4.BackgroundImage = global::Resto.Client.Properties.Resources.logo;
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
@@ -398,7 +398,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = global::Resto.UI.Properties.Resources.signboardpdf;
+            this.pictureBox2.Image = global::Resto.Client.Properties.Resources.signboardpdf;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(865, 77);

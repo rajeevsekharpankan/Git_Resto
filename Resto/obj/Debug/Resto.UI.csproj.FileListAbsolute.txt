@@ -53,9 +53,6 @@ D:\Personal Projects\naveen\Resto_07_16_2018\NewResto\Resto\obj\Debug\Resto.UI.c
 D:\Personal Projects\naveen\Resto_07_16_2018\NewResto\Resto\obj\Debug\Resto.UI.exe
 D:\Personal Projects\naveen\Resto_07_16_2018\NewResto\Resto\obj\Debug\Resto.UI.pdb
 D:\Personal Projects\naveen\Resto_07_16_2018\NewResto\Resto\bin\Debug\RestoDB.accdb
-D:\Personal Projects\naveen\Git_Resto\Resto\bin\Debug\Resto.UI.exe.config
-D:\Personal Projects\naveen\Git_Resto\Resto\bin\Debug\Resto.UI.exe
-D:\Personal Projects\naveen\Git_Resto\Resto\bin\Debug\Resto.UI.pdb
 D:\Personal Projects\naveen\Git_Resto\Resto\bin\Debug\Bunifu_UI_v1.52.dll
 D:\Personal Projects\naveen\Git_Resto\Resto\bin\Debug\Resto.Manager.dll
 D:\Personal Projects\naveen\Git_Resto\Resto\bin\Debug\Resto.Models.dll
@@ -76,8 +73,12 @@ D:\Personal Projects\naveen\Git_Resto\Resto\obj\Debug\Resto.UI.MySecondCustmCont
 D:\Personal Projects\naveen\Git_Resto\Resto\obj\Debug\Resto.UI.OrderCtrl.resources
 D:\Personal Projects\naveen\Git_Resto\Resto\obj\Debug\Resto.UI.PendingOrderCtrl.resources
 D:\Personal Projects\naveen\Git_Resto\Resto\obj\Debug\Resto.UI.Productctrl.resources
-D:\Personal Projects\naveen\Git_Resto\Resto\obj\Debug\Resto.UI.Properties.Resources.resources
 D:\Personal Projects\naveen\Git_Resto\Resto\obj\Debug\Resto.UI.csproj.GenerateResource.Cache
 D:\Personal Projects\naveen\Git_Resto\Resto\obj\Debug\Resto.UI.csproj.CoreCompileInputs.cache
-D:\Personal Projects\naveen\Git_Resto\Resto\obj\Debug\Resto.UI.exe
-D:\Personal Projects\naveen\Git_Resto\Resto\obj\Debug\Resto.UI.pdb
+D:\Personal Projects\naveen\Git_Resto\Resto\bin\Debug\RestoDB.accdb
+D:\Personal Projects\naveen\Git_Resto\Resto\obj\Debug\Resto.Client.Properties.Resources.resources
+D:\Personal Projects\naveen\Git_Resto\Resto\bin\Debug\Resto.Client.exe.config
+D:\Personal Projects\naveen\Git_Resto\Resto\bin\Debug\Resto.Client.exe
+D:\Personal Projects\naveen\Git_Resto\Resto\bin\Debug\Resto.Client.pdb
+D:\Personal Projects\naveen\Git_Resto\Resto\obj\Debug\Resto.Client.exe
+D:\Personal Projects\naveen\Git_Resto\Resto\obj\Debug\Resto.Client.pdb

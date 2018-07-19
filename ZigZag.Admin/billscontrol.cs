@@ -142,7 +142,11 @@ namespace ZigZag.Admin
                 billmaster.pcid = Utilities.currentpc.id;
                 string returndata = manager.InsertFinalBill(billmaster);
                 // lblbillno.Text = returndata;
-                if (returndata != "0") Cleartexts();
+                if (returndata != "0")
+                {
+                    Utilities.ShowInfo("Order Completed Successfully!");
+                    Cleartexts();
+                }
             }
             catch (Exception ex)
             {
@@ -193,5 +197,45 @@ namespace ZigZag.Admin
                 Utilities.ShowError(ex.Message.ToString());
             }
         }
+        public void Fillitems()
+        {
+            try
+            {
+                if (fmload) return;
+                pnlbill.Controls.Clear();
+                PcModel pcModel = (PcModel)pcCtrl1.Tag;
+                if (pcModel != null)
+                {
+                    List<ItemModel> unbilleditems = billmanager.GetAllItemsNotBilledByPc(pcModel.id);
+                    SellItemCtrl product = null;
+                    string imagepath = ConfigurationManager.AppSettings["imagepath"].ToString();
+
+                    foreach (ItemModel item in unbilleditems)
+                    {
+
+                        product = new SellItemCtrl(item);
+                        product.lblproductname.Text = item.itemname;
+                        product.lblprice.Text = string.Format("{0:0.00}", item.price);
+                        product.txtqty.Value = item.qty;
+                        product.txtqty.Visible = false;
+                        product.lblqty.Visible = true;
+                        product.lblqty.Text = item.qty.ToString();
+                        product.picitem.ImageLocation = imagepath + item.imagepath;
+                        product.btnaddtocart.Visible = false;
+                        product.btndelete.Visible = false;
+                        product.lblprice.Visible = true;
+
+                        pnlbill.Controls.Add(product);
+                    }
+                }
+                UpdateAmount();
+            }
+            catch (Exception ex)
+            {
+
+                Utilities.ShowError(ex.Message.ToString());
+            }
+        }
     }
 }
+

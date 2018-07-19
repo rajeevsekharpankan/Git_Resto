@@ -42,16 +42,6 @@
             this.button12 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.stockCtrl1 = new ZigZag.Admin.StockCtrl();
-            this.billscontrol1 = new ZigZag.Admin.billscontrol();
-            this.zigzagHome1 = new ZigZag.Admin.ZigzagHome();
-            this.suppliers1 = new ZigZag.Admin.Suppliers();
-            this.purchaseCtrl1 = new ZigZag.Admin.PurchaseCtrl();
-            this.pcListCtrl1 = new ZigZag.Admin.PcListCtrl();
-            this.customerCtrl1 = new ZigZag.Admin.CustomerCtrl();
-            this.ItemListCtrl1 = new ZigZag.Admin.AddProduct();
-            this.orderCtrl1 = new ZigZag.Admin.OrderCtrl();
-            this.userCreationCtrl1 = new ZigZag.Admin.UserCreationCtrl();
             this.button14 = new System.Windows.Forms.Button();
             this.pnlmenu = new System.Windows.Forms.Panel();
             this.btnhome = new System.Windows.Forms.Button();
@@ -73,7 +63,16 @@
             this.button3 = new System.Windows.Forms.Button();
             this.btnItemmaster = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btntakeaway = new System.Windows.Forms.Button();
+            this.stockCtrl1 = new ZigZag.Admin.StockCtrl();
+            this.billscontrol1 = new ZigZag.Admin.billscontrol();
+            this.zigzagHome1 = new ZigZag.Admin.ZigzagHome();
+            this.suppliers1 = new ZigZag.Admin.Suppliers();
+            this.purchaseCtrl1 = new ZigZag.Admin.PurchaseCtrl();
+            this.pcListCtrl1 = new ZigZag.Admin.PcListCtrl();
+            this.customerCtrl1 = new ZigZag.Admin.CustomerCtrl();
+            this.ItemListCtrl1 = new ZigZag.Admin.AddProduct();
+            this.orderCtrl1 = new ZigZag.Admin.OrderCtrl();
+            this.userCreationCtrl1 = new ZigZag.Admin.UserCreationCtrl();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -272,6 +271,342 @@
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Visible = false;
             // 
+            // button14
+            // 
+            this.button14.FlatAppearance.BorderSize = 0;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.ForeColor = System.Drawing.Color.White;
+            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button14.Location = new System.Drawing.Point(51, 615);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(36, 34);
+            this.button14.TabIndex = 4;
+            this.button14.Text = "?";
+            this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Visible = false;
+            // 
+            // pnlmenu
+            // 
+            this.pnlmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.pnlmenu.Controls.Add(this.btnhome);
+            this.pnlmenu.Controls.Add(this.pnllogo);
+            this.pnlmenu.Controls.Add(this.SidePanel);
+            this.pnlmenu.Controls.Add(this.btnlandingpage);
+            this.pnlmenu.Controls.Add(this.btnusers);
+            this.pnlmenu.Controls.Add(this.btnsuppliers);
+            this.pnlmenu.Controls.Add(this.btncustomer);
+            this.pnlmenu.Controls.Add(this.btnpurchase);
+            this.pnlmenu.Controls.Add(this.btnmanagement);
+            this.pnlmenu.Controls.Add(this.btnreports);
+            this.pnlmenu.Controls.Add(this.btnpclist);
+            this.pnlmenu.Controls.Add(this.btnstock);
+            this.pnlmenu.Controls.Add(this.btndirectbilling);
+            this.pnlmenu.Controls.Add(this.btnbill);
+            this.pnlmenu.Controls.Add(this.button5);
+            this.pnlmenu.Controls.Add(this.button4);
+            this.pnlmenu.Controls.Add(this.button3);
+            this.pnlmenu.Controls.Add(this.button14);
+            this.pnlmenu.Controls.Add(this.btnItemmaster);
+            this.pnlmenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlmenu.Location = new System.Drawing.Point(0, 0);
+            this.pnlmenu.Name = "pnlmenu";
+            this.pnlmenu.Size = new System.Drawing.Size(209, 679);
+            this.pnlmenu.TabIndex = 0;
+            this.pnlmenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnhome
+            // 
+            this.btnhome.FlatAppearance.BorderSize = 0;
+            this.btnhome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnhome.Image = ((System.Drawing.Image)(resources.GetObject("btnhome.Image")));
+            this.btnhome.Location = new System.Drawing.Point(1, 140);
+            this.btnhome.Name = "btnhome";
+            this.btnhome.Size = new System.Drawing.Size(62, 26);
+            this.btnhome.TabIndex = 7;
+            this.btnhome.UseVisualStyleBackColor = true;
+            this.btnhome.Click += new System.EventHandler(this.btnhome_Click);
+            // 
+            // pnllogo
+            // 
+            this.pnllogo.BackgroundImage = global::ZigZag.Admin.Properties.Resources.logo;
+            this.pnllogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnllogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnllogo.Location = new System.Drawing.Point(0, 0);
+            this.pnllogo.Name = "pnllogo";
+            this.pnllogo.Size = new System.Drawing.Size(209, 134);
+            this.pnllogo.TabIndex = 6;
+            // 
+            // SidePanel
+            // 
+            this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.SidePanel.Location = new System.Drawing.Point(1, 171);
+            this.SidePanel.Name = "SidePanel";
+            this.SidePanel.Size = new System.Drawing.Size(10, 30);
+            this.SidePanel.TabIndex = 4;
+            // 
+            // btnlandingpage
+            // 
+            this.btnlandingpage.FlatAppearance.BorderSize = 0;
+            this.btnlandingpage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlandingpage.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlandingpage.ForeColor = System.Drawing.Color.White;
+            this.btnlandingpage.Image = ((System.Drawing.Image)(resources.GetObject("btnlandingpage.Image")));
+            this.btnlandingpage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnlandingpage.Location = new System.Drawing.Point(11, 174);
+            this.btnlandingpage.Name = "btnlandingpage";
+            this.btnlandingpage.Size = new System.Drawing.Size(197, 30);
+            this.btnlandingpage.TabIndex = 4;
+            this.btnlandingpage.Text = "       Home";
+            this.btnlandingpage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnlandingpage.UseVisualStyleBackColor = true;
+            this.btnlandingpage.Click += new System.EventHandler(this.btnlandingpage_Click);
+            // 
+            // btnusers
+            // 
+            this.btnusers.FlatAppearance.BorderSize = 0;
+            this.btnusers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnusers.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnusers.ForeColor = System.Drawing.Color.White;
+            this.btnusers.Image = ((System.Drawing.Image)(resources.GetObject("btnusers.Image")));
+            this.btnusers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnusers.Location = new System.Drawing.Point(10, 462);
+            this.btnusers.Name = "btnusers";
+            this.btnusers.Size = new System.Drawing.Size(197, 30);
+            this.btnusers.TabIndex = 4;
+            this.btnusers.Text = "       Users";
+            this.btnusers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnusers.UseVisualStyleBackColor = true;
+            this.btnusers.Click += new System.EventHandler(this.btnusers_Click);
+            // 
+            // btnsuppliers
+            // 
+            this.btnsuppliers.FlatAppearance.BorderSize = 0;
+            this.btnsuppliers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsuppliers.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsuppliers.ForeColor = System.Drawing.Color.White;
+            this.btnsuppliers.Image = ((System.Drawing.Image)(resources.GetObject("btnsuppliers.Image")));
+            this.btnsuppliers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsuppliers.Location = new System.Drawing.Point(9, 210);
+            this.btnsuppliers.Name = "btnsuppliers";
+            this.btnsuppliers.Size = new System.Drawing.Size(197, 30);
+            this.btnsuppliers.TabIndex = 4;
+            this.btnsuppliers.Text = "       Suppliers";
+            this.btnsuppliers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnsuppliers.UseVisualStyleBackColor = true;
+            this.btnsuppliers.Click += new System.EventHandler(this.btnsuppliers_Click);
+            // 
+            // btncustomer
+            // 
+            this.btncustomer.FlatAppearance.BorderSize = 0;
+            this.btncustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncustomer.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncustomer.ForeColor = System.Drawing.Color.White;
+            this.btncustomer.Image = ((System.Drawing.Image)(resources.GetObject("btncustomer.Image")));
+            this.btncustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btncustomer.Location = new System.Drawing.Point(11, 615);
+            this.btncustomer.Name = "btncustomer";
+            this.btncustomer.Size = new System.Drawing.Size(197, 30);
+            this.btncustomer.TabIndex = 4;
+            this.btncustomer.Text = "       Customers";
+            this.btncustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btncustomer.UseVisualStyleBackColor = true;
+            this.btncustomer.Visible = false;
+            this.btncustomer.Click += new System.EventHandler(this.btncustomer_Click);
+            // 
+            // btnpurchase
+            // 
+            this.btnpurchase.FlatAppearance.BorderSize = 0;
+            this.btnpurchase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnpurchase.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpurchase.ForeColor = System.Drawing.Color.White;
+            this.btnpurchase.Image = ((System.Drawing.Image)(resources.GetObject("btnpurchase.Image")));
+            this.btnpurchase.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnpurchase.Location = new System.Drawing.Point(9, 282);
+            this.btnpurchase.Name = "btnpurchase";
+            this.btnpurchase.Size = new System.Drawing.Size(197, 30);
+            this.btnpurchase.TabIndex = 4;
+            this.btnpurchase.Text = "       Purchase";
+            this.btnpurchase.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnpurchase.UseVisualStyleBackColor = true;
+            this.btnpurchase.Click += new System.EventHandler(this.btnpurchase_Click);
+            // 
+            // btnmanagement
+            // 
+            this.btnmanagement.FlatAppearance.BorderSize = 0;
+            this.btnmanagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnmanagement.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnmanagement.ForeColor = System.Drawing.Color.White;
+            this.btnmanagement.Image = global::ZigZag.Admin.Properties.Resources.lap;
+            this.btnmanagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnmanagement.Location = new System.Drawing.Point(5, 534);
+            this.btnmanagement.Name = "btnmanagement";
+            this.btnmanagement.Size = new System.Drawing.Size(197, 30);
+            this.btnmanagement.TabIndex = 4;
+            this.btnmanagement.Text = "       Management";
+            this.btnmanagement.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnmanagement.UseVisualStyleBackColor = true;
+            this.btnmanagement.Click += new System.EventHandler(this.btnmanagement_Click);
+            // 
+            // btnreports
+            // 
+            this.btnreports.FlatAppearance.BorderSize = 0;
+            this.btnreports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnreports.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnreports.ForeColor = System.Drawing.Color.White;
+            this.btnreports.Image = global::ZigZag.Admin.Properties.Resources.lap;
+            this.btnreports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnreports.Location = new System.Drawing.Point(5, 498);
+            this.btnreports.Name = "btnreports";
+            this.btnreports.Size = new System.Drawing.Size(197, 30);
+            this.btnreports.TabIndex = 4;
+            this.btnreports.Text = "       Reports";
+            this.btnreports.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnreports.UseVisualStyleBackColor = true;
+            this.btnreports.Click += new System.EventHandler(this.btnreports_Click);
+            // 
+            // btnpclist
+            // 
+            this.btnpclist.FlatAppearance.BorderSize = 0;
+            this.btnpclist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnpclist.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpclist.ForeColor = System.Drawing.Color.White;
+            this.btnpclist.Image = global::ZigZag.Admin.Properties.Resources.lap;
+            this.btnpclist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnpclist.Location = new System.Drawing.Point(8, 426);
+            this.btnpclist.Name = "btnpclist";
+            this.btnpclist.Size = new System.Drawing.Size(197, 30);
+            this.btnpclist.TabIndex = 4;
+            this.btnpclist.Text = "       Pc Numbering";
+            this.btnpclist.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnpclist.UseVisualStyleBackColor = true;
+            this.btnpclist.Click += new System.EventHandler(this.btnpclist_Click);
+            // 
+            // btnstock
+            // 
+            this.btnstock.FlatAppearance.BorderSize = 0;
+            this.btnstock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnstock.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnstock.ForeColor = System.Drawing.Color.White;
+            this.btnstock.Image = ((System.Drawing.Image)(resources.GetObject("btnstock.Image")));
+            this.btnstock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnstock.Location = new System.Drawing.Point(9, 390);
+            this.btnstock.Name = "btnstock";
+            this.btnstock.Size = new System.Drawing.Size(197, 30);
+            this.btnstock.TabIndex = 4;
+            this.btnstock.Text = "       Stock";
+            this.btnstock.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnstock.UseVisualStyleBackColor = true;
+            this.btnstock.Click += new System.EventHandler(this.btnstock_Click);
+            // 
+            // btndirectbilling
+            // 
+            this.btndirectbilling.FlatAppearance.BorderSize = 0;
+            this.btndirectbilling.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndirectbilling.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndirectbilling.ForeColor = System.Drawing.Color.White;
+            this.btndirectbilling.Image = ((System.Drawing.Image)(resources.GetObject("btndirectbilling.Image")));
+            this.btndirectbilling.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btndirectbilling.Location = new System.Drawing.Point(9, 354);
+            this.btndirectbilling.Name = "btndirectbilling";
+            this.btndirectbilling.Size = new System.Drawing.Size(197, 30);
+            this.btndirectbilling.TabIndex = 4;
+            this.btndirectbilling.Text = "       Billing";
+            this.btndirectbilling.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btndirectbilling.UseVisualStyleBackColor = true;
+            this.btndirectbilling.Click += new System.EventHandler(this.btndirectbilling_Click);
+            // 
+            // btnbill
+            // 
+            this.btnbill.FlatAppearance.BorderSize = 0;
+            this.btnbill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnbill.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbill.ForeColor = System.Drawing.Color.White;
+            this.btnbill.Image = ((System.Drawing.Image)(resources.GetObject("btnbill.Image")));
+            this.btnbill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnbill.Location = new System.Drawing.Point(10, 318);
+            this.btnbill.Name = "btnbill";
+            this.btnbill.Size = new System.Drawing.Size(197, 30);
+            this.btnbill.TabIndex = 4;
+            this.btnbill.Text = "       Ordering";
+            this.btnbill.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnbill.UseVisualStyleBackColor = true;
+            this.btnbill.Click += new System.EventHandler(this.btnbill_Click);
+            // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(2, 604);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(197, 54);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "       Take Away";
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Visible = false;
+            // 
+            // button4
+            // 
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(9, 595);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(197, 54);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "       Delivery";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Visible = false;
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(6, 626);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(197, 50);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "       Collection";
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Visible = false;
+            // 
+            // btnItemmaster
+            // 
+            this.btnItemmaster.FlatAppearance.BorderSize = 0;
+            this.btnItemmaster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnItemmaster.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnItemmaster.ForeColor = System.Drawing.Color.White;
+            this.btnItemmaster.Image = ((System.Drawing.Image)(resources.GetObject("btnItemmaster.Image")));
+            this.btnItemmaster.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnItemmaster.Location = new System.Drawing.Point(9, 246);
+            this.btnItemmaster.Name = "btnItemmaster";
+            this.btnItemmaster.Size = new System.Drawing.Size(197, 30);
+            this.btnItemmaster.TabIndex = 4;
+            this.btnItemmaster.Text = "       Add Product";
+            this.btnItemmaster.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnItemmaster.UseVisualStyleBackColor = true;
+            this.btnItemmaster.Click += new System.EventHandler(this.btnItemmaster_click);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 20;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // stockCtrl1
             // 
             this.stockCtrl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -367,359 +702,6 @@
             this.userCreationCtrl1.Size = new System.Drawing.Size(867, 596);
             this.userCreationCtrl1.TabIndex = 7;
             // 
-            // button14
-            // 
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(51, 615);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(36, 34);
-            this.button14.TabIndex = 4;
-            this.button14.Text = "?";
-            this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Visible = false;
-            // 
-            // pnlmenu
-            // 
-            this.pnlmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.pnlmenu.Controls.Add(this.btnhome);
-            this.pnlmenu.Controls.Add(this.pnllogo);
-            this.pnlmenu.Controls.Add(this.SidePanel);
-            this.pnlmenu.Controls.Add(this.btnlandingpage);
-            this.pnlmenu.Controls.Add(this.btnusers);
-            this.pnlmenu.Controls.Add(this.btnsuppliers);
-            this.pnlmenu.Controls.Add(this.btncustomer);
-            this.pnlmenu.Controls.Add(this.btnpurchase);
-            this.pnlmenu.Controls.Add(this.btnmanagement);
-            this.pnlmenu.Controls.Add(this.btnreports);
-            this.pnlmenu.Controls.Add(this.btnpclist);
-            this.pnlmenu.Controls.Add(this.btnstock);
-            this.pnlmenu.Controls.Add(this.btndirectbilling);
-            this.pnlmenu.Controls.Add(this.btntakeaway);
-            this.pnlmenu.Controls.Add(this.btnbill);
-            this.pnlmenu.Controls.Add(this.button5);
-            this.pnlmenu.Controls.Add(this.button4);
-            this.pnlmenu.Controls.Add(this.button3);
-            this.pnlmenu.Controls.Add(this.button14);
-            this.pnlmenu.Controls.Add(this.btnItemmaster);
-            this.pnlmenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlmenu.Location = new System.Drawing.Point(0, 0);
-            this.pnlmenu.Name = "pnlmenu";
-            this.pnlmenu.Size = new System.Drawing.Size(209, 679);
-            this.pnlmenu.TabIndex = 0;
-            this.pnlmenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // btnhome
-            // 
-            this.btnhome.FlatAppearance.BorderSize = 0;
-            this.btnhome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnhome.Image = ((System.Drawing.Image)(resources.GetObject("btnhome.Image")));
-            this.btnhome.Location = new System.Drawing.Point(1, 140);
-            this.btnhome.Name = "btnhome";
-            this.btnhome.Size = new System.Drawing.Size(62, 26);
-            this.btnhome.TabIndex = 7;
-            this.btnhome.UseVisualStyleBackColor = true;
-            this.btnhome.Click += new System.EventHandler(this.btnhome_Click);
-            // 
-            // pnllogo
-            // 
-            this.pnllogo.BackgroundImage = global::ZigZag.Admin.Properties.Resources.logo;
-            this.pnllogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnllogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnllogo.Location = new System.Drawing.Point(0, 0);
-            this.pnllogo.Name = "pnllogo";
-            this.pnllogo.Size = new System.Drawing.Size(209, 134);
-            this.pnllogo.TabIndex = 6;
-            // 
-            // SidePanel
-            // 
-            this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
-            this.SidePanel.Location = new System.Drawing.Point(1, 171);
-            this.SidePanel.Name = "SidePanel";
-            this.SidePanel.Size = new System.Drawing.Size(10, 30);
-            this.SidePanel.TabIndex = 4;
-            // 
-            // btnlandingpage
-            // 
-            this.btnlandingpage.FlatAppearance.BorderSize = 0;
-            this.btnlandingpage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnlandingpage.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlandingpage.ForeColor = System.Drawing.Color.White;
-            this.btnlandingpage.Image = ((System.Drawing.Image)(resources.GetObject("btnlandingpage.Image")));
-            this.btnlandingpage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnlandingpage.Location = new System.Drawing.Point(11, 174);
-            this.btnlandingpage.Name = "btnlandingpage";
-            this.btnlandingpage.Size = new System.Drawing.Size(197, 30);
-            this.btnlandingpage.TabIndex = 4;
-            this.btnlandingpage.Text = "       Home";
-            this.btnlandingpage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnlandingpage.UseVisualStyleBackColor = true;
-            this.btnlandingpage.Click += new System.EventHandler(this.btnlandingpage_Click);
-            // 
-            // btnusers
-            // 
-            this.btnusers.FlatAppearance.BorderSize = 0;
-            this.btnusers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnusers.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnusers.ForeColor = System.Drawing.Color.White;
-            this.btnusers.Image = ((System.Drawing.Image)(resources.GetObject("btnusers.Image")));
-            this.btnusers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnusers.Location = new System.Drawing.Point(11, 500);
-            this.btnusers.Name = "btnusers";
-            this.btnusers.Size = new System.Drawing.Size(197, 30);
-            this.btnusers.TabIndex = 4;
-            this.btnusers.Text = "       Users";
-            this.btnusers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnusers.UseVisualStyleBackColor = true;
-            this.btnusers.Click += new System.EventHandler(this.btnusers_Click);
-            // 
-            // btnsuppliers
-            // 
-            this.btnsuppliers.FlatAppearance.BorderSize = 0;
-            this.btnsuppliers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsuppliers.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsuppliers.ForeColor = System.Drawing.Color.White;
-            this.btnsuppliers.Image = ((System.Drawing.Image)(resources.GetObject("btnsuppliers.Image")));
-            this.btnsuppliers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsuppliers.Location = new System.Drawing.Point(9, 210);
-            this.btnsuppliers.Name = "btnsuppliers";
-            this.btnsuppliers.Size = new System.Drawing.Size(197, 30);
-            this.btnsuppliers.TabIndex = 4;
-            this.btnsuppliers.Text = "       Suppliers";
-            this.btnsuppliers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnsuppliers.UseVisualStyleBackColor = true;
-            this.btnsuppliers.Click += new System.EventHandler(this.btnsuppliers_Click);
-            // 
-            // btncustomer
-            // 
-            this.btncustomer.FlatAppearance.BorderSize = 0;
-            this.btncustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncustomer.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncustomer.ForeColor = System.Drawing.Color.White;
-            this.btncustomer.Image = ((System.Drawing.Image)(resources.GetObject("btncustomer.Image")));
-            this.btncustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncustomer.Location = new System.Drawing.Point(11, 615);
-            this.btncustomer.Name = "btncustomer";
-            this.btncustomer.Size = new System.Drawing.Size(197, 30);
-            this.btncustomer.TabIndex = 4;
-            this.btncustomer.Text = "       Customers";
-            this.btncustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btncustomer.UseVisualStyleBackColor = true;
-            this.btncustomer.Visible = false;
-            this.btncustomer.Click += new System.EventHandler(this.btncustomer_Click);
-            // 
-            // btnpurchase
-            // 
-            this.btnpurchase.FlatAppearance.BorderSize = 0;
-            this.btnpurchase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnpurchase.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnpurchase.ForeColor = System.Drawing.Color.White;
-            this.btnpurchase.Image = ((System.Drawing.Image)(resources.GetObject("btnpurchase.Image")));
-            this.btnpurchase.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnpurchase.Location = new System.Drawing.Point(9, 282);
-            this.btnpurchase.Name = "btnpurchase";
-            this.btnpurchase.Size = new System.Drawing.Size(197, 30);
-            this.btnpurchase.TabIndex = 4;
-            this.btnpurchase.Text = "       Purchase";
-            this.btnpurchase.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnpurchase.UseVisualStyleBackColor = true;
-            this.btnpurchase.Click += new System.EventHandler(this.btnpurchase_Click);
-            // 
-            // btnmanagement
-            // 
-            this.btnmanagement.FlatAppearance.BorderSize = 0;
-            this.btnmanagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnmanagement.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnmanagement.ForeColor = System.Drawing.Color.White;
-            this.btnmanagement.Image = global::ZigZag.Admin.Properties.Resources.lap;
-            this.btnmanagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnmanagement.Location = new System.Drawing.Point(6, 572);
-            this.btnmanagement.Name = "btnmanagement";
-            this.btnmanagement.Size = new System.Drawing.Size(197, 30);
-            this.btnmanagement.TabIndex = 4;
-            this.btnmanagement.Text = "       Management";
-            this.btnmanagement.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnmanagement.UseVisualStyleBackColor = true;
-            this.btnmanagement.Click += new System.EventHandler(this.btnmanagement_Click);
-            // 
-            // btnreports
-            // 
-            this.btnreports.FlatAppearance.BorderSize = 0;
-            this.btnreports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnreports.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnreports.ForeColor = System.Drawing.Color.White;
-            this.btnreports.Image = global::ZigZag.Admin.Properties.Resources.lap;
-            this.btnreports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnreports.Location = new System.Drawing.Point(6, 536);
-            this.btnreports.Name = "btnreports";
-            this.btnreports.Size = new System.Drawing.Size(197, 30);
-            this.btnreports.TabIndex = 4;
-            this.btnreports.Text = "       Reports";
-            this.btnreports.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnreports.UseVisualStyleBackColor = true;
-            this.btnreports.Click += new System.EventHandler(this.btnreports_Click);
-            // 
-            // btnpclist
-            // 
-            this.btnpclist.FlatAppearance.BorderSize = 0;
-            this.btnpclist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnpclist.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnpclist.ForeColor = System.Drawing.Color.White;
-            this.btnpclist.Image = global::ZigZag.Admin.Properties.Resources.lap;
-            this.btnpclist.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnpclist.Location = new System.Drawing.Point(9, 464);
-            this.btnpclist.Name = "btnpclist";
-            this.btnpclist.Size = new System.Drawing.Size(197, 30);
-            this.btnpclist.TabIndex = 4;
-            this.btnpclist.Text = "       Pc Numbering";
-            this.btnpclist.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnpclist.UseVisualStyleBackColor = true;
-            this.btnpclist.Click += new System.EventHandler(this.btnpclist_Click);
-            // 
-            // btnstock
-            // 
-            this.btnstock.FlatAppearance.BorderSize = 0;
-            this.btnstock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnstock.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnstock.ForeColor = System.Drawing.Color.White;
-            this.btnstock.Image = ((System.Drawing.Image)(resources.GetObject("btnstock.Image")));
-            this.btnstock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnstock.Location = new System.Drawing.Point(10, 428);
-            this.btnstock.Name = "btnstock";
-            this.btnstock.Size = new System.Drawing.Size(197, 30);
-            this.btnstock.TabIndex = 4;
-            this.btnstock.Text = "       Stock";
-            this.btnstock.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnstock.UseVisualStyleBackColor = true;
-            this.btnstock.Click += new System.EventHandler(this.btnstock_Click);
-            // 
-            // btndirectbilling
-            // 
-            this.btndirectbilling.FlatAppearance.BorderSize = 0;
-            this.btndirectbilling.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndirectbilling.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndirectbilling.ForeColor = System.Drawing.Color.White;
-            this.btndirectbilling.Image = ((System.Drawing.Image)(resources.GetObject("btndirectbilling.Image")));
-            this.btndirectbilling.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btndirectbilling.Location = new System.Drawing.Point(10, 392);
-            this.btndirectbilling.Name = "btndirectbilling";
-            this.btndirectbilling.Size = new System.Drawing.Size(197, 30);
-            this.btndirectbilling.TabIndex = 4;
-            this.btndirectbilling.Text = "       Billing";
-            this.btndirectbilling.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btndirectbilling.UseVisualStyleBackColor = true;
-            this.btndirectbilling.Click += new System.EventHandler(this.btndirectbilling_Click);
-            // 
-            // btnbill
-            // 
-            this.btnbill.FlatAppearance.BorderSize = 0;
-            this.btnbill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnbill.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbill.ForeColor = System.Drawing.Color.White;
-            this.btnbill.Image = ((System.Drawing.Image)(resources.GetObject("btnbill.Image")));
-            this.btnbill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnbill.Location = new System.Drawing.Point(10, 318);
-            this.btnbill.Name = "btnbill";
-            this.btnbill.Size = new System.Drawing.Size(197, 30);
-            this.btnbill.TabIndex = 4;
-            this.btnbill.Text = "       Pc Ordering";
-            this.btnbill.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnbill.UseVisualStyleBackColor = true;
-            this.btnbill.Click += new System.EventHandler(this.btnbill_Click);
-            // 
-            // button5
-            // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(2, 604);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(197, 54);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "       Take Away";
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Visible = false;
-            // 
-            // button4
-            // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(9, 595);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(197, 54);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "       Delivery";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Visible = false;
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(6, 626);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(197, 50);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "       Collection";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Visible = false;
-            // 
-            // btnItemmaster
-            // 
-            this.btnItemmaster.FlatAppearance.BorderSize = 0;
-            this.btnItemmaster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnItemmaster.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnItemmaster.ForeColor = System.Drawing.Color.White;
-            this.btnItemmaster.Image = ((System.Drawing.Image)(resources.GetObject("btnItemmaster.Image")));
-            this.btnItemmaster.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnItemmaster.Location = new System.Drawing.Point(9, 246);
-            this.btnItemmaster.Name = "btnItemmaster";
-            this.btnItemmaster.Size = new System.Drawing.Size(197, 30);
-            this.btnItemmaster.TabIndex = 4;
-            this.btnItemmaster.Text = "       Add Product";
-            this.btnItemmaster.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnItemmaster.UseVisualStyleBackColor = true;
-            this.btnItemmaster.Click += new System.EventHandler(this.btnItemmaster_click);
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 20;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // btntakeaway
-            // 
-            this.btntakeaway.FlatAppearance.BorderSize = 0;
-            this.btntakeaway.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btntakeaway.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btntakeaway.ForeColor = System.Drawing.Color.White;
-            this.btntakeaway.Image = ((System.Drawing.Image)(resources.GetObject("btntakeaway.Image")));
-            this.btntakeaway.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btntakeaway.Location = new System.Drawing.Point(9, 354);
-            this.btntakeaway.Name = "btntakeaway";
-            this.btntakeaway.Size = new System.Drawing.Size(197, 30);
-            this.btntakeaway.TabIndex = 4;
-            this.btntakeaway.Text = "       Takeaway";
-            this.btntakeaway.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btntakeaway.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -794,7 +776,6 @@
         private System.Windows.Forms.Button btnreports;
         public System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Button btnmanagement;
-        private System.Windows.Forms.Button btntakeaway;
     }
 }
 

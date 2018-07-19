@@ -132,7 +132,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = global::Resto.UI.Properties.Resources.signboardpdf1;
+            this.panel2.BackgroundImage = global::Resto.Client.Properties.Resources.signboardpdf1;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);

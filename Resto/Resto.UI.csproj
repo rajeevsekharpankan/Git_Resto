@@ -7,8 +7,8 @@
     <ProjectGuid>{2BDDB774-9994-45CD-A910-8A07B4C7AFA6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Resto.UI</RootNamespace>
-    <AssemblyName>Resto.UI</AssemblyName>
+    <RootNamespace>Resto.Client</RootNamespace>
+    <AssemblyName>Resto.Client</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
@@ -36,8 +36,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>
-    </ApplicationIcon>
+    <ApplicationIcon>z.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.52">
@@ -208,6 +207,9 @@
     <None Include="Resources\key1.png" />
     <None Include="Resources\key.png" />
     <None Include="Resources\signboardpdf1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="z.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

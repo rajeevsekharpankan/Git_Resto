@@ -75,7 +75,7 @@ namespace ZigZag.Admin
                 newitem.Tag = p;
                 newitem.lblproductname.Text = p.itemname;
                 newitem.lblprice.Text = string.Format("{0:0.00}", p.price);
-                newitem.picitem.ImageLocation =  p.imagepath;
+                //newitem.picitem.ImageLocation =  p.imagepath;
                 productspnl.Controls.Add(newitem);
 
             }

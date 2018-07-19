@@ -139,3 +139,4 @@ D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.Billed
 D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.OrderForm.resources
 D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.PcBillingCtrl.resources
 D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\obj\Debug\ZigZag.Admin.PcSelectionCtrl.resources
+D:\Personal Projects\naveen\Git_Resto\ZigZag.Admin\bin\Debug\RestoDB.accdb
